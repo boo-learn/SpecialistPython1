@@ -6,6 +6,9 @@
 name = input("Имя: ")
 surname = input("Фамилия: ")
 
-# TODO: your code here
+ааааааааа-фигенно крутое решение
+и тут код
+и тут код
+и даже тут...
 
 print(name, surname)
