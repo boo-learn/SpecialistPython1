@@ -2,3 +2,4 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+print(sum(input_list))
