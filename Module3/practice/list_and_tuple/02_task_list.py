@@ -4,3 +4,9 @@
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
 # TODO: your code here
+list1 = [1,-3,4,-5,5]
+sum =0
+for el in list1:
+    if el >0:
+        sum +=el
+print(sum)
