@@ -3,7 +3,18 @@
 # выровненного по правой стороне - слева короткие слова дополняем символами пробела
 
 # Исходные данные:
-fruits = ["яблоко", "банан", "киви", "арбуз"]
+fruits = ["apple", "banan", "pineapple", "applepen", 'kiwi', 'h', 'j', 'y', 'hg', 'hgd']
+
+max_len = 0
+for i, fruit in enumerate(fruits):
+    n_len = len(fruit) + len(str(i + 1))
+    if n_len > max_len:
+        max_len = n_len
+
+for i, fruit in enumerate(fruits):
+    spaces = max_len - len(fruit) - len(str(i + 1))
+    result = spaces* ' ' + fruit
+    print(str(i + 1) + '.', result)
 
 # TODO: your code here
 
