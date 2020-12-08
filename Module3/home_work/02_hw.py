@@ -5,4 +5,7 @@
 import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
-# TODO: your code here
+
+for i in range(random.randint(0, 10)):
+    numbers.append(random.randint(-100, 100))
+print(numbers)
