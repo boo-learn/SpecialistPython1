@@ -5,3 +5,6 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+numbers = [2, -5, 8, 9, -25, 25, 4]
+result = [int(i) for i in range(max(numbers)) if int(i) ** 2 in numbers]
+print(result)
