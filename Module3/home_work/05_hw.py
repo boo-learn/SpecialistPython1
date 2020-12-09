@@ -3,4 +3,4 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+print(max(names, key=len))
