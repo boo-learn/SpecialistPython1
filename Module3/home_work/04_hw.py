@@ -5,3 +5,14 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+import math
+
+
+numbers = [2, -5, 8, 9, -25, 25, 4]
+num=[]
+f=0
+for elm in numbers:
+    #if(elm>0 and (int(math.sqrt(elm))==float(math.sqrt(elm)))):
+    if (elm > 0 and (float.is_integer(math.sqrt(elm)))):
+        num.append(int(math.sqrt(elm)))
+print(num)
