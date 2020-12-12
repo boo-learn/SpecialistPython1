@@ -4,3 +4,8 @@
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
 # TODO: your code here
+max=""
+for elm in names:
+    if(len(max)<len(elm)):
+        max=elm
+print(max)
