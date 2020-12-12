@@ -31,15 +31,50 @@ items = [
         "price": 1700
     },
 ]
-# Найдите:
-print("Товары на складе представлены брэндами: ")
 
-# TODO: your code here
+brands = []
+for good in items:
+    brand = good["brand"]
+    if brand not in brands:
+        brands.append(brand)
 
-print("На складе больше всего товаров брэнда(ов): ")
+print("Товары на складе представлены брэндами: ", ", ".join(brands))
 
-# TODO: your code here
+brands = []
+max_brands = 0
+for good in items:
+    brand = good["brand"]
+    brands.append(brand)
+    if brand in brands:
+        max_brands
 
-print("На складе самый дорогой товар брэнда(ов): ")
+brands_count = {}
+for brand in brands:
+    brands_count[brand] = 0
 
-# TODO: your code here
+for good in items:
+    brand = good["brand"]
+    brands_count[brand] += 1
+max_items_per_brand = max(brands_count.values())
+
+top_brands = []
+for brand, count in brands_count.items():
+    if count == max_items_per_brand:
+        top_brands.append(brand)
+
+print("На складе больше всего товаров брэнда(ов): ", ", ".join(top_brands))
+
+max_price = 0
+for good in items:
+    price = good["price"]
+    if price > max_price:
+        max_price = price
+
+max_brands = []
+for good in items:
+    price = good["price"]
+    if price == max_price:
+        max_brands.append(good["brand"])
+
+print("На складе самый дорогой товар брэнда(ов): ", ", ".join(max_brands))
+
