@@ -5,3 +5,16 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+import random
+numbers = []
+n = 100
+for _ in range(n):
+    numbers.append(random.randint(-100, 100))
+
+roots = []
+for num in numbers:
+    if num > 0:
+        root = num ** (1/2)
+        if root - int(root) == 0:
+            roots.append(int(root))
+print(roots)
