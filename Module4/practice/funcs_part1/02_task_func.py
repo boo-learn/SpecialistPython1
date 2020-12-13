@@ -4,7 +4,14 @@
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
 def palindrome(number):
-    pass
+    if number < 0:
+        return False
+    digits = []
+    while number > 0:
+        res = number % 10
+        number = number // 10
+        digits.append(res)
+    return digits[::-1] == digits
 
 
 # Тестируем функцию
