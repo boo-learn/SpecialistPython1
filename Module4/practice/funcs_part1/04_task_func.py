@@ -10,3 +10,12 @@ def can_triangle(p1, p2, p3):
 can_triangle((10, 12), (14, 18), (12, 12))
 
 # Не забудьте протестировать вашу функцию
+
+
+def can_triangle(p1, p2, p3):
+    dist1 = ((p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2) ** 0.5
+    dist2 = ((p2[0] - p3[0]) ** 2 + (p2[1] - p3[1]) ** 2) ** 0.5
+    dist3 = ((p1[0] - p3[0]) ** 2 + (p1[1] - p3[1]) ** 2) ** 0.5
+    
+        if (dist1 <(dist2 + dist3)) AND (dist2 <(dist3 + dist1)) AND (dist3 <(dist1 + dist2)):
+      return True    
