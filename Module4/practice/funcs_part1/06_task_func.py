@@ -6,3 +6,5 @@ def point_in_circle(x, y, xc, yc, r):
     pass
 
 # Не забудьте протестировать вашу функцию
+def point_in_circle(x, y, xc, yc, r):
+    return (x - xc) ** 2 + (y - yc) ** 2 < r * r
