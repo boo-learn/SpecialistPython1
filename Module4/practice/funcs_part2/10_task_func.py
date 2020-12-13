@@ -4,7 +4,11 @@
 def average(*args):
     # TODO: your code here
     pass
-
+def average(*args):
+    summ = 0
+    for i in args:
+        summ += i
+    return summ / len(args)
 
 print(average(3, 4, 8))
 print(average(1, 4, 5, -3, 8, 4))
