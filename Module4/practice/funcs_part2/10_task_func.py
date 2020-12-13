@@ -2,8 +2,11 @@
 # Функция должна вызываться с любым количеством аргументов
 
 def average(*args):
-    # TODO: your code here
-    pass
+    def average(*args):
+    s = 0
+    for el in args:
+            s += el
+    return s
 
 
 print(average(3, 4, 8))
