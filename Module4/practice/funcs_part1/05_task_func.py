@@ -4,6 +4,22 @@
 # Подсказка: для нахождения площади используйте Теорему Герона
 
 # TODO: your code here
+def distance(p1, p2):
+    a = p2[0] - p1[0]
+    b = p2[1] - p1[1]
+    return (a**2 + b**2) ** 0.5
 
+
+def can_triangle(p1, p2, p3):
+    a = distance(p1, p2)
+    b = distance(p2, p3)
+    c = distance(p3, p1)
+    p = (a + b + c) / 2
+
+    s2 = p * (p - a) * (p - b) * (p - c)
+    if s2 > 0:
+        return (p * 2, s2 ** 0.5)
+
+    return None
 
 # Не забудьте протестировать вашу функцию
