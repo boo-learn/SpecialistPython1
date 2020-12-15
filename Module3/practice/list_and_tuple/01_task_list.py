@@ -2,5 +2,6 @@
 # Каждый элемент должен быть выведен с новой строки.
 
 my_list = [24, "Васлий", "выхухоль", 42, -12.5]
-
+for ind in my_list:
+    print(ind)
 # TODO: your code here
