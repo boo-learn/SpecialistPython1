@@ -4,14 +4,14 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
-
-# TODO: your code here
-
-# Пример вывода:
-# 1. яблоко
-# 2.  банан
-# 3.    киви
-# 4.  арбуз
-
-# Важно! Ваше решение должно работать с любыми корректными "исходными данными"
-# Проверьте это, добавив или удалив несколько элементов списка
+max_len = 0
+curr_len = 0
+for fruit in fruits:
+    curr_len = len(fruit)
+    if curr_len > max_len:
+        max_len = curr_len
+#
+for fruit in fruits:
+    delta_len = max_len - len(fruit)
+    str_to_print = ' ' * delta_len + fruit
+    print(str_to_print)
