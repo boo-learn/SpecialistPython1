@@ -5,7 +5,10 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+i = 0
+while i < len(fruits):
+    print(i+1, ' ', ' '*(len(max(fruits))-len(fruits[i])),fruits[i])
+    i+=1
 
 # Пример вывода:
 # 1. яблоко
