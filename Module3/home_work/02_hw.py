@@ -5,4 +5,9 @@
 import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
-# TODO: your code here
+n = int(input('Введите кол-во элементов: '))
+while n > 0:
+    numbers.append(random.randint(-100, 100))
+    n -= 1
+
+print(numbers)
