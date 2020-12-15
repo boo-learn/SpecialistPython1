@@ -23,7 +23,12 @@ items = [
     {
         "name": "Шорты",
         "brand": "adidas",
-        "price": 2750
+        "price": 4800
+    },
+    {
+         "name": "Носки",
+         "brand": "reebok",
+         "price": 4800
     },
     {
         "name": "Футболка",
@@ -34,12 +39,44 @@ items = [
 # Найдите:
 print("Товары на складе представлены брэндами: ")
 
-# TODO: your code here
+brands = []
+for item in items:
+    brands.append(item["brand"])
+for brand in brands[:]:
+    if brands.count(brand) > 1:
+        brands.remove(brand)
 
-print("На складе больше всего товаров брэнда(ов): ")
+print(brands)
 
-# TODO: your code here
+print("\nНа складе больше всего товаров брэнда(ов): ")
 
-print("На складе самый дорогой товар брэнда(ов): ")
+brands = []
+for item in items:
+    brands.append(item["brand"])
+max_brand = []
+count = brands.count(brands[0])
+for brand in brands:
+    if brands.count(brand) > count:
+        max_brand.clear()
+        max_brand.append(brand)
+        count = brands.count(brand)
+    elif brands.count(brand) == count:
+        if max_brand.count(brand) == 0:
+            max_brand.append(brand)
 
-# TODO: your code here
+print(max_brand)
+
+print("\nНа складе самый дорогой товар брэнда(ов): ")
+
+max_item = items[0]
+max_price_brand = []
+for item in items:
+    if item["price"] > max_item["price"]:
+        max_price_brand.clear()
+        max_item = item
+        max_price_brand.append(item["brand"])
+    elif item["price"] == max_item["price"]:
+        if max_price_brand.count(item["brand"]) == 0:
+            max_price_brand.append(item["brand"])
+
+print(max_price_brand)
