@@ -3,7 +3,13 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+count = 1
+for el in names:
+    if count == len(names):
+        print(el)
+    else:
+        print(el, end=', ')
+        count += 1
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
