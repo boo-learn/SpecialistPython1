@@ -2,10 +2,15 @@
 # Напишите программу, выводящую фрукты в виде нумерованного списка,
 # выровненного по правой стороне - слева короткие слова дополняем символами пробела
 
-# Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
-
-# TODO: your code here
+sort_fruits=fruits
+sort_fruits.sort(key=len,reverse=True) #key=len,reverse=True
+max_len=len(sort_fruits[0])
+print(fruits)
+print(sort_fruits)
+print(max_len)
+for i, fruit in enumerate(fruits,1):
+    print(i," "," "*(max_len-len(fruit)), fruit)
 
 # Пример вывода:
 # 1. яблоко
