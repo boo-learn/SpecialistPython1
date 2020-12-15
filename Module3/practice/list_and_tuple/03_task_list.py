@@ -2,3 +2,10 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+lst = [-10, 2, 1, 5, -5, 4, 8]
+
+cnt = len(lst)
+sum = 0
+for elem in lst:
+    sum += elem
+print(sum)
