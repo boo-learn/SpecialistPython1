@@ -1,5 +1,6 @@
 # Дан кортеж заполненный целыми числами
 # Найдите самый большой элемент кортежа
 tup = (2, 4, 6, -4, 12, 0, 5)
-
-# TODO: your code here
+tup_list=list(tup)
+tup_list.sort(reverse=True)
+print("Самый большой элемент кортежа равен: ",tup_list[0])
