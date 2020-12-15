@@ -5,3 +5,11 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+numbers = [2, -5, 8, 9, -25, 25, 4, 0, 225, 17]
+num_roots = []
+for el in numbers:
+    if el >= 0 and (el**0.5).is_integer() == True:
+        num_roots.append(int(el**0.5))
+
+print(num_roots)
