@@ -5,9 +5,19 @@
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
 def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** .5
 
+
+a = (1, 1)
+b = (2, 2)
+c = (3, 3)
+
+lst_od_dicts = [{'name': "ab", 'len': distance(*a, *b)},
+                {'name': "ac", 'len': distance(*a, *c)},
+                {'name': "bc", 'len': distance(*c, *b)},
+                ]
+print(lst_od_dicts)
+lst_od_dicts.sort(key=lambda x: x['len'])
 
 # TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+# print("Самый короткий отрезок:", lst_od_dicts[0]['name'])  # Выводим название отрезка, например “АС”.
