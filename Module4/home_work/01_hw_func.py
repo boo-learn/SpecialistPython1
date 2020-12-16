@@ -3,8 +3,9 @@
 # Билет считается счастливым, если сумма его первых и последних цифр равны.
 
 def lucky_ticket(ticket_number):
-    # TODO: your code here
-    pass
+    numbers = tuple(map(int, str(ticket_number)))
+    rev_numbers = tuple(reversed(numbers))
+    return sum(numbers[:len(numbers)//2]) == sum(rev_numbers[:len(rev_numbers)//2])
 
 
 # Тестируем функцию
