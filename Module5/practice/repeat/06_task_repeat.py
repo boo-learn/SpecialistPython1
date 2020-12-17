@@ -6,5 +6,5 @@
 # которые не делятся нацело на 400, високосными не являются.
 
 def days_in_year(num_year):
-    pass
+    return num_year%4==0 and not(num_year%400==0)
 
