@@ -5,3 +5,15 @@
 
 # При решении задачи требуется учесть формат входных данных.
 # Если входные данные некорректные, сообщить об этом.
+
+# string = "2 12 -45 7 10 0 "
+# string = "2 12 -45 7 10 0 2.1"
+string = "2 12 -45 7 10 0 aaa"
+
+try:
+    numbers = map(int, string.split())
+    positive = filter(lambda x: x>0,numbers)
+    minnum = min(positive)
+    print(minnum)
+except ValueError as e:
+    print(f"ВВедены некорректные данные: {e}")
