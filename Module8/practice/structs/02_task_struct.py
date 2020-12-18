@@ -5,3 +5,19 @@
 #   например, lst = [1, 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 2, 4, 5, 6]
 #   2. элементы исходного списка, которые не имеют повторений(встречаются только один раз):
 #   например, lst = [1 , 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 4, 6]
+import random
+def rand_list(n,low=-10,up=10):
+    numbers = list()
+    for _ in range(0, n):
+        numbers.append(random.randint(low, up))
+    return numbers
+
+
+lst = rand_list(7)
+print(lst)
+
+st = set(lst)
+print(st)
+
+lst_endemic = list(filter(lambda x: lst.count(x)==1,st))
+print(lst_endemic)
