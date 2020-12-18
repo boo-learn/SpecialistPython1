@@ -5,3 +5,18 @@
 
 # При решении задачи требуется учесть формат входных данных.
 # Если входные данные некорректные, сообщить об этом.
+str="2 12 -45 7 10 1"
+# str=input('Введите строку из 5 цифр')
+lst_str=str.split(" ")
+print(lst_str)
+try:
+    i=0
+    lst_numb=[]
+    for el in lst_str:
+        if int(el)>0:
+            lst_numb.append(int(el))
+        i+=1
+except IndexError:
+    print("В строке не числа")
+
+print(f"Минимальное положительное число из списка равно {min(lst_numb)}")
