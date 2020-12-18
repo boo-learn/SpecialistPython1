@@ -7,3 +7,19 @@
 # *23*
 # ****
 # (кол-во звездочек зависит от длины возвращаемого значения)
+def star_print(func):
+    def wrapper():
+        ln=len(str(func()))
+        print("*"*(ln+2))
+        print(f"*{func()}*")
+        print("*"*(ln+2))
+    return wrapper
+
+
+@star_print
+def simple_print():
+    a=[12,45,6,7,-2,"fuf"]
+    return a
+
+
+print(simple_print())
