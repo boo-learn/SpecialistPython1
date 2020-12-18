@@ -4,3 +4,18 @@
 # На вход программе подается строка формата nxm (x - латинская буква икс).
 # Пример входных данных: 12x6
 # Если данные вводятся в неверном формате, сообщить об этом и запросить ввод заново.
+bool = True
+while bool:
+
+    inp = input('Введите размер прямоугольника в формате nxm ')
+
+    inp = inp.split('x')
+    print(inp)
+
+    try:
+        res = int(inp[0]) // int(inp[1])
+        print(res)
+        bool = False
+    except ValueError as e:
+        print(f"Некорректный ввод данных {e}")
+        bool = True
