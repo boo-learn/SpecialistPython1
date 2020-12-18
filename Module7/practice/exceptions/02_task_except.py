@@ -4,3 +4,25 @@
 # Алгоритм проверки на високосный год оформите в виде отдельной функции.
 #
 # Входная строка содержит два целых числа – номер месяца (возможно, неправильный) и номер года.
+from Library.lib import days_in_year
+
+def days (m, y):
+    year = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if days_in_year(y) == 366 and m==2:
+        return year[m-1]+1
+    return year[m-1]
+
+while True:
+    data = input('Введите месяц и год через пробел: ')
+    pair = data.split(" ")
+    try:
+        m, y = int(pair[0]), int(pair[1])
+        if y <= 0 or m <= 0:
+            raise ValueError
+        if m > 12:
+            raise ValueError
+        break
+    except (ValueError, IndexError):
+        print('Некорректный формат данных. Повторите ввод\n')
+
+print(f'Количество дней в {m}-м месяце года = {days(m,y)}')
