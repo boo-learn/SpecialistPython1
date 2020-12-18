@@ -4,3 +4,25 @@
 # Алгоритм проверки на високосный год оформите в виде отдельной функции.
 #
 # Входная строка содержит два целых числа – номер месяца (возможно, неправильный) и номер года.
+def days_in_year(num_year):
+    return num_year%4==0 and not(num_year%400==0)
+
+while True:
+    try:
+        month=int(input("Введите месяц "))
+        year=int(input("Введите год "))
+        if not(0 < month < 13):
+            raise ValueError
+        break
+    except ValueError:
+        print("Некорректные данные")
+month31=1,3,5,7,8,10,12
+month30=4,6,9,11
+if month in month31:
+    print(f'В месяце {month} 31 день')
+elif month in month30:
+    print(f'В месяце {month} 30 дней')
+elif days_in_year(year):
+    print(f'В месяце {month} 29 дней')
+else:
+    print(f'В месяце {month} 28 дней')
