@@ -2,9 +2,11 @@
 # Решение реализовать в виде функции.
 # Билет считается счастливым, если сумма его первых и последних цифр равны.
 
+x = lambda z: 'Yes' if ( z[ :(len(z)//2) ] == z[:(len(z)//2)-1:-1]) else 'No'
+
 def lucky_ticket(ticket_number):
-    # TODO: your code here
-    pass
+    return x(str(ticket_number))
+print(lucky_ticket(123456789987654321))
 
 
 # Тестируем функцию
