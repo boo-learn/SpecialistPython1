@@ -2,3 +2,8 @@
 # Находится ли одна окружность целиком внутри другой
 
 # TODO: your code here
+def distance(r1, r2, x1, y1, x2, y2):
+    return ((r2-r1)**2 > (x2-x1)**2 + (y2-y1)**2)
+
+
+print(distance(10, 11, 12, 2, 4, 15))
