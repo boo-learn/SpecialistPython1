@@ -1,8 +1,9 @@
 # Напишите функцию log() принимающую в качестве аргумента строку и дописывающую это строку в конец файла
 
 def log(text, file="log.txt"):
-    pass
+     with open(name_file, 'a') as file:
+          file.write(text)
 
-
-log("hello world")  # дописывает "hello world" в конец файла log.txt
-log("message", "log01.txt")  # дописывает "message" в конец файла log01.txt
+if __name__ =='__main__':
+    log('hello world')
+    log('message', 'log01.txt')
