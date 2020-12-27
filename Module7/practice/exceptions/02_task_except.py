@@ -4,3 +4,13 @@
 # Алгоритм проверки на високосный год оформите в виде отдельной функции.
 #
 # Входная строка содержит два целых числа – номер месяца (возможно, неправильный) и номер года.
+
+
+try:
+    month = int(input("input month: "))
+
+    if (month > 12 or month < 0):
+        raise ValueError
+    print("Month is correct")
+except ValueError:
+ print("Format error")
