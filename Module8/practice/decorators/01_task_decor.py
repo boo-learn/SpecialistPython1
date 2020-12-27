@@ -7,3 +7,22 @@
 # *23*
 # ****
 # (кол-во звездочек зависит от длины возвращаемого значения)
+
+
+
+def decor_fnc(param):
+    def wrapper():
+     i = 0
+     while i< len(param):
+         print("*")
+         i = i -1
+     return  wrapper
+
+
+@decor_fnc
+def inp():
+    str = input("Input value:")
+    return len(str)
+
+
+inp()
