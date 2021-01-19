@@ -3,5 +3,10 @@
 # если делится на 5 - вывести “Bar”,
 # а если делится на 3 и на 5 - вывести “Foobar”.
 # Для всех остальных случаев не выводить ничего.
-
-# TODO: your code here
+num = int(input('Введите целое число: '))
+if not(num % 3) and not(num % 5):
+    print('Foobar')
+elif not(num % 3):
+    print('Foo')
+elif not (num % 5):
+    print('Bar')
