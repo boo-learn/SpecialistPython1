@@ -2,4 +2,12 @@
 # Формат входных данных: Дано два целых числа a и b. Гарантируется, что a < b
 # Формат выходных данных: Выведите все числа, требуемые по условию задачи.
 
-# TODO: your code here
+a = int(input())
+b = int(input())
+
+number = a
+
+while number <= b:
+    if number % 2 == 0:
+        print(number)
+    number += 1
