@@ -7,4 +7,7 @@
 
 year = int(input("Год: "))
 
-# TODO: your code here
+if not(year % 4) and year % 100 or not(year % 400):
+    print('366')
+else:
+    print('365')
