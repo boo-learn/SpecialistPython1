@@ -7,3 +7,10 @@ if number > 0:
     print("Положительное")
 else:
     print("Отрицательное")
+
+    
+    number = float(input())  # Считываем вещественное число
+if number < 0:
+    print("1")
+else:
+    print("2")
