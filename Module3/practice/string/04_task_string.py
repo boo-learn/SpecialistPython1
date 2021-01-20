@@ -4,4 +4,7 @@
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
 # Примечание: для генериации текста можете воспользоваться сайтом: https://ru.lipsum.com/
 
-# TODO: your code here
+list = text.replace('.', '').split()
+for word in list:
+    if len(word) > 5:
+        print(word)
