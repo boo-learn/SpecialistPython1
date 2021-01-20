@@ -3,4 +3,5 @@
 
 my_list = [24, "Васлий", "выхухоль", 42, -12.5]
 
-# TODO: your code here
+for i in my_list:
+    print(i)
