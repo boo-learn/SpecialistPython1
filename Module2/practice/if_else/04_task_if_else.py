@@ -5,3 +5,11 @@
 # Для всех остальных случаев не выводить ничего.
 
 # TODO: your code here
+
+a = int(input())
+if a % 5 == 0 and a % 3 == 0:
+    print("Foo")
+elif a % 5 == 0:
+    print("Bar")
+elif a % 3 == 0:
+    print("Foobar") 
