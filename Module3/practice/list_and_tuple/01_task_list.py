@@ -3,4 +3,8 @@
 
 my_list = [24, "Васлий", "выхухоль", 42, -12.5]
 
-# TODO: your code here
+my_list = [24, "Васлий", "выхухоль", 42, -12.5]
+x = 0
+while x < len(my_list):
+    print(my_list [x])
+    x += 1
