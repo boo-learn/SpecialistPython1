@@ -29,3 +29,9 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+
+x = float(input())
+y = x
+while x <= 105:
+    print(x)
+    x = x + y
