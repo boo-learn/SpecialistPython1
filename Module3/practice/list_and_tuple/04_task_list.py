@@ -1,4 +1,11 @@
 # Дан список из n элементов, заполненный произвольными целыми числами в диапазоне от -10 до 10.
 # Вывести на экран сумму всех положительных элементов.
 
-# TODO: your code here
+random_list = [2, 3, -3, 5, -1, 9, 8, 1, -1, -4]
+positive_list = 0
+
+for i in random_list:
+    if i > 0:
+        positive_list += i
+
+print(positive_list)
