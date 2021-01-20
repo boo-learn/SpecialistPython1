@@ -6,5 +6,6 @@
 name = input("Имя: ")
 surname = input("Фамилия: ")
 
-
+name = name[0:1].upper() + name[1:]
+surname = surname[0:1].upper() + surname[1:]
 print(name, surname)
