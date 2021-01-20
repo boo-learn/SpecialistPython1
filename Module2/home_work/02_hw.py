@@ -7,4 +7,13 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+n = int(input('n='))
+с = 'На лугу пасется'
+if 11 <= n <= 19 or 11 <= n % 100 <= 19:
+    print(с, n, 'korov')
+elif n % 10 == 1:
+    print(с, n, 'korova')
+elif n % 10 == 2 or n % 10 == 3 or n % 10 == 4:
+    print(с, n, 'korovi')
+else:
+    print(с, n, 'korov')
