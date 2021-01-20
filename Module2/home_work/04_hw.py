@@ -14,3 +14,22 @@
 #    #
 #    #
 ######
+sq_len = int(input('Введите длину стороны квадрата: '))
+
+width_len = height_len = 0
+
+while height_len < sq_len:
+    if height_len == 0 or height_len == sq_len - 1:
+        block_texture = '#'
+    else:
+        block_texture = ' '
+    side = ''
+    width_len = 0
+    while width_len < sq_len:
+        if width_len == 0 or width_len == sq_len - 1:
+            side += '#'
+        else:
+            side += block_texture
+        width_len += 1
+    height_len += 1
+    print(side)
