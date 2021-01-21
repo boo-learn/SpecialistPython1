@@ -6,5 +6,6 @@
 
 item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub", "count": "10"}
 dollar_rate = 74.12
-
-# TODO: your code here
+c = float(item["price"])
+cost = round(c / dollar_rate, 2)
+print('Цена в долларах', cost)
