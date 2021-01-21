@@ -7,3 +7,10 @@ values = ['Петр', 'Первый', 42, 1300]
 # TODO: your code here
 # Нужно получить словарь:
 # {'name': 'Петр', 'surname': 'Первый', 'age': 42, 'rate': 1300}
+
+new_dict = {}
+i = 0
+for i in range(len(keys)):  # наверное не лучшее
+    new_dict[keys[i]] = values[i]
+
+print(new_dict)
