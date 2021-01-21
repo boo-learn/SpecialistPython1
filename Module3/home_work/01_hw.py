@@ -3,7 +3,14 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
+x = 1
+for name in names:
+    if x != len(names):
+        print(name, end=', ')
+    else:
+        print(name, end='')
+    x += 1
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
