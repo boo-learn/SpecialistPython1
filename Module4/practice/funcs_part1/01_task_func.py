@@ -1,9 +1,7 @@
 # Напишите функцию, возвращающую наибольшее из двух чисел
 
 def max2(n1, n2):
-    # TODO: your code here
-    pass
-
+    return n1 if n1>n2 else n2
 
 # Тестируем функцию
 print(max2(5, 6))
