@@ -4,7 +4,18 @@
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
 def palindrome(number):
-    pass
+    copy_number = number
+    reverse_number = 0
+    while number > 0:
+        reverse_number += number % 10
+        number //= 10
+        if number > 0:
+            reverse_number *= 10
+    print(reverse_number)
+    if reverse_number == copy_number:
+        return True
+    return False
+        
 
 
 # Тестируем функцию
