@@ -1,3 +1,4 @@
+
 # Данные о товарах на складе хранятся в словаре
 items = [
     {
@@ -31,15 +32,38 @@ items = [
         "price": 1700
     },
 ]
+
+all_brands = []  # Список всех брендов с повторяющимися
+brands = []      # Список уникальных названий брендов
+max_price = 0    
+for item in items:
+    brand = item.get("brand")
+    if brands.count(brand) == 0:
+        brands.append(brand)
+    all_brands.append(brand)
+    if item.get("price") > max_price:
+        max_price = item.get("price")
+
 # Найдите:
 print("Товары на складе представлены брэндами: ")
+print(brands)
 
-# TODO: your code here
-
+# ТУТ ВОТ НЕ ПОНЯТНО!!!! Нужно посчитать каких name больше всего и вывести названия и бренды?
+#                        Или посчитать каких brand больше всего? (тут реализованно именно это)
 print("На складе больше всего товаров брэнда(ов): ")
+max_count = 0
+max_brand = []
+for brand in brands:       # первый пробег определяет какие из названий брендов чаще всего повторяются
+    count = all_brands.count(brand)
+    if count > max_count:
+        max_count = count
 
-# TODO: your code here
+for brand in brands:       # второй пробег формирует список из чаще всего повторяющихся брендов
+    if all_brands.count(brand) == max_count:
+        max_brand.append(brand)
+print(max_brand)
 
 print("На складе самый дорогой товар брэнда(ов): ")
-
-# TODO: your code here
+for item in items:
+    if item.get("price") == max_price:
+        print(item.get("brand"))
