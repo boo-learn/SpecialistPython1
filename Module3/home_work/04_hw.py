@@ -5,3 +5,11 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+we_have_list = [2, -5, 8, 9, -25, 25, 4]
+new_list_result = []
+for i in we_have_list:
+    #print(i)
+    if  i > 0 and (i**0.5).is_integer():
+        print(i)
+        new_list_result.append(int(i**0.5))
+print(new_list_result)
