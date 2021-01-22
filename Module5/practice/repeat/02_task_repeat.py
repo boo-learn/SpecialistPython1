@@ -4,4 +4,11 @@
 #  Пример палиндрома: 12321
 
 def palindrome(number):
-    pass
+    num = number
+    revers_num = 0
+    while num != 0:
+        revers_num += num % 10
+        num = num // 10
+        if num != 0:
+            revers_num *= 10
+    return revers_num == number
