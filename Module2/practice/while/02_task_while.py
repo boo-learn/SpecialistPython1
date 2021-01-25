@@ -3,3 +3,7 @@
 # то программа запрашивает ввод снова.
 
 # TODO: your code here
+word = input('input word: ')
+
+while word != 'хватит':
+    word = input('try again: ')
