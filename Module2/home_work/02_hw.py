@@ -8,3 +8,10 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+cow = int(input('cow amount: '))
+if cow%10 > 4 or 10 <= cow%100 <= 14 or cow%10 == 0:
+    print('На лугу пасется', cow, 'коров.')
+elif 1 < cow%10 <= 4:
+   print('На лугу пасется', cow, 'коровы.')
+else:
+    print('На лугу пасется', cow, 'корова.')
