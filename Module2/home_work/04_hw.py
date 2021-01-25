@@ -14,3 +14,17 @@
 #    #
 #    #
 ######
+
+a = int(input("Введите сторону квадрата а:"))
+rows = 1
+i = 0
+
+while i <= a:
+    i += 1
+    if rows == i:
+        print (str('#')*a)
+    elif i == a:
+        print(str('#')*a)
+        break
+    else:
+        print (str('#'),str(' ')*(a-4),str('#'))
