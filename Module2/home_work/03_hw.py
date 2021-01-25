@@ -28,4 +28,11 @@
 # 19 189.81 Rub.
 # 20 199.80 Rub.
 
-# TODO: your code here
+x = float(input("Введите стоимость товара:"))
+i = 0
+sum = 0.0
+
+while i <= 19:
+    i += 1
+    sum = sum + x
+    print(i, round(sum, 2),"Rub.") #Нашел функцию округления Round. Как можно вывести х.00 Rub или х.80 Rub?
