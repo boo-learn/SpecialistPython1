@@ -28,4 +28,8 @@
 # 19 189.81 Rub.
 # 20 199.80 Rub.
 
-# TODO: your code here
+price = float(input("Веди число n: "))
+unit = 0
+while unit != 20:
+    unit += 1
+    print(unit, unit * price, 'Rub.')
