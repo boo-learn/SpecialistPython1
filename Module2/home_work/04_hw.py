@@ -14,3 +14,25 @@
 #    #
 #    #
 ######
+
+# вариант эстетически более красивый, квадрат более квадратный
+s = int(input("Введите сторону квадрата: "))
+i = 0
+up_down = '# ' * s
+middle = '#' + ' ' * (s * 2 - 3) + '#'
+print(up_down)
+while i < (s - 2):
+    print(middle)
+    i += 1
+print(up_down)
+
+# вариант как требует условие задачи
+#s = int(input("Введите сторону квадрата: "))
+#i = 0
+#up_down = '#' * s
+#middle = '#' + ' ' * (s - 2) + '#'
+#print(up_down)
+#while i < (s - 2):
+#    print(middle)
+#    i += 1
+#print(up_down)
