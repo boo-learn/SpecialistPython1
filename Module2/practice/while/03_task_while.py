@@ -10,3 +10,14 @@
 # 1234
 
 # TODO: your code here
+count = int(input('enter count num: '))
+i = 1
+
+while i <= count:
+    b = 1
+    string = ''
+    while b <= i:
+        string += str(b)
+        b += 1
+    print(string)
+    i += 1
