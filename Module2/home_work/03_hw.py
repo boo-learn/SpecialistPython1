@@ -28,4 +28,10 @@
 # 19 189.81 Rub.
 # 20 199.80 Rub.
 
-# TODO: your code here
+stoimost = float(input("Введите стоимость товара: "))
+sum = stoimost
+i = 1
+while i <= 20:
+    print(i, "%.2f" % sum, "Rub.")
+    sum = sum + stoimost
+    i += 1
