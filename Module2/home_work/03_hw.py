@@ -29,3 +29,9 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+price = float(input('enter price: '))
+
+i = 1
+while i <= 20:
+    print('#', i, '{:.2f}'.format(i*price), 'Rub.')
+    i += 1
