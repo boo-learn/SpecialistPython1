@@ -9,4 +9,10 @@
 # 123
 # 1234
 
-# TODO: your code here
+n = int(input("Веди число n: "))
+i = 0
+s = ''
+while i != n:
+    i += 1
+    s = str(s) + str(i)
+    print(s)
