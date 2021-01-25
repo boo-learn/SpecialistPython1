@@ -6,3 +6,31 @@
 # Результат: фруктов на букву “к” больше.
 # Дано: [“ананас”, “яблоко”, “Арбуз”, “киви”, “Клюква”, “банан”, “хурма”]
 # Результат: фруктов на букву “к”и “а” больше.
+
+alpabet = {'а': 0, 'б': 0, 'в': 0, 'г': 0, 'д': 0,
+           'е': 0, 'ё': 0, 'ж': 0, 'з': 0, 'и': 0,
+           'й': 0, 'к': 0, 'л': 0, 'м': 0, 'н': 0,
+           'о': 0, 'п': 0, 'р': 0, 'с': 0, 'т': 0,
+           'у': 0, 'ф': 0, 'х': 0, 'ц': 0, 'ч': 0,
+           'ш': 0, 'щ': 0, 'ъ': 0, 'ы': 0, 'ь': 0,
+           'э': 0, 'ю': 0, 'я': 0}
+
+fruit_list = ["ананас", "кокос", "Арбуз", "Клюква", "банан", "хурма"]
+
+for fruit in fruit_list:
+    alpabet[fruit.lower()[0]] += 1
+
+max_num = max(alpabet.values())
+letter_list = []
+for letter in alpabet:
+    if alpabet[letter] == max_num:
+        letter_list.append(letter)
+
+result_str = "Фруктов на букву"
+for letter in letter_list:
+    result_str += ' "' + letter + '"'
+    if letter != letter_list[-1]:
+        result_str += ' и'
+
+result_str += ' больше.'
+print(result_str)
