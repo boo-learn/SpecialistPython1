@@ -8,3 +8,10 @@ item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub", "cou
 dollar_rate = 74.12
 
 # TODO: your code here
+
+
+name = item.get("name")
+price = float(item.get("price"))
+count = float(item.get("count"))
+total = price * dollar_rate * count
+print(total)
