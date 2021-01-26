@@ -4,3 +4,22 @@
 # На вход программе подается строка формата nxm (x - латинская буква икс).
 # Пример входных данных: 12x6
 # Если данные вводятся в неверном формате, сообщить об этом и запросить ввод заново.
+
+result = 0
+while True:
+    try:
+        in_data = input("Введите данные:")
+        str_data = in_data.split('x')
+        print(str_data)
+        if len(str_data) != 2:
+            print('Неверный формат данных! Попробуйте ещё раз...')
+            continue
+        n, m = int(str_data[0]), int(str_data[1])
+        result = m // n
+    except ValueError:
+        print('Некорректные данные! Попробуйте ещё раз..')
+    except Exception as err:
+        print('Неожиданное исключение:', err)
+    else:
+        print("Можно отрезать частей:", result)
+        break
