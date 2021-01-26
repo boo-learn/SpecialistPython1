@@ -2,3 +2,10 @@
 # Вывести на экран сумму всех положительных элементов кратных двум.
 
 # TODO: your code here
+my_list = [16, -49, 63, 91, -92, -56, 53, -70, -53, -49]
+sum_pos_els = 0
+
+for el in my_list:
+    if el > 0 and el % 2 == 0:
+        sum_pos_els += el
+print(sum_pos_els)
