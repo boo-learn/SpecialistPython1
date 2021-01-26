@@ -15,3 +15,14 @@ fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # Важно! Ваше решение должно работать с любыми корректными "исходными данными"
 # Проверьте это, добавив или удалив несколько элементов списка
+biggest_name = 0
+for fruit in fruits:
+    if len(fruit) > biggest_name:
+        biggest_name = len(fruit)
+
+print(type(biggest_name))
+line = 1
+
+for fruit in fruits:
+    print(line, ' '*int(biggest_name-len(fruit))+fruit)
+    line += 1
