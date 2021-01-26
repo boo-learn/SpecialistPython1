@@ -2,3 +2,8 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+list = [4, 1, -6, 3, 2, -5, 6, 9, -10]
+sum = 0
+for el in list:
+    sum += el
+print(sum)
