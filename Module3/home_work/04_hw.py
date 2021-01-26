@@ -5,3 +5,13 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+my_list = [2, -5, 8, 9, -25, 25, 4]
+rezult = []
+
+for num in my_list:
+    x = num ** 0.5
+    # Почему выражение if x.is_integer(): не работает в данном случае? Если x - целое число (True) то выполнить.
+    if type(x) == float and x.is_integer(): 
+        rezult.append(int(x))
+print(rezult)
