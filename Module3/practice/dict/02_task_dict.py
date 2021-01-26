@@ -7,3 +7,11 @@ values = ['Петр', 'Первый', 42, 1300]
 # TODO: your code here
 # Нужно получить словарь:
 # {'name': 'Петр', 'surname': 'Первый', 'age': 42, 'rate': 1300}
+
+my_dict = {}
+k = 0
+
+for key in keys:
+    my_dict.setdefault(key, values[k])
+    k += 1
+print(my_dict)
