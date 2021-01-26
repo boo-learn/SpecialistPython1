@@ -4,3 +4,22 @@
 # Алгоритм проверки на високосный год оформите в виде отдельной функции.
 #
 # Входная строка содержит два целых числа – номер месяца (возможно, неправильный) и номер года.
+
+import calendar
+
+while True:
+    el = input(f"Введите целое число формата month year: ")
+    data = el.split()
+    try:
+        month = int(data[0])
+        year = int(data[1])
+        if month > 12:
+            raise ValueError
+    except ValueError:
+        print("Введены некоррекные данные, попробуйте снова")
+    except Exception as err:
+        print("Исключение:", err)
+    else:
+        break
+
+print(calendar.monthrange(year, month)[1])
