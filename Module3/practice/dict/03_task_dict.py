@@ -34,7 +34,9 @@ max_salary = 0
 for person in staff:
     if person['salary'] > max_salary:
         max_salary = person['salary']
-print(max_salary)
+        name = person['name'] + ' ' + person['surname']
+print(name)
+#print(max_salary)
 
 print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
 # TODO: your code here
@@ -71,10 +73,12 @@ print(len(same_surname.keys()))
 
 print("*Список всех сотрудников(Имя и Фамилию) в порядке возрастания их зарплаты")
 salary_list = []
-#for person in staff:
 for person in staff:
     salary_list.append(int(person['salary']))
 salary_list = sorted(salary_list)
-for person in staff:
-    if int(person['salary']) == salary_list[-1]:
-        print(person['name'] + ' ' + person['surname'])
+print(salary_list)
+name_list = []
+for salary in salary_list:
+    for person in staff:
+        if int(person['salary']) == salary:
+            print(person['name'] + ' ' + person['surname'])
