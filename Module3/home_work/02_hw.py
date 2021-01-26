@@ -5,4 +5,15 @@
 import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
-# TODO: your code here
+
+
+n = int(input("Введите длину списка: "))
+
+import random
+numbers = []
+
+
+for i in range(0,n):
+    numbers.append(random.randint(-100, 100))
+
+print(numbers)
