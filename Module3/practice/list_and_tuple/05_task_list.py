@@ -4,14 +4,15 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
+max_len = 0
+i = 1
 
-# TODO: your code here
+for fruit in fruits:
+    len_fruit = len(fruit)
+    if len_fruit > max_len:
+        max_len = len_fruit
 
-# Пример вывода:
-# 1. яблоко
-# 2.  банан
-# 3.   киви
-# 4.  арбуз
-
-# Важно! Ваше решение должно работать с любыми корректными "исходными данными"
-# Проверьте это, добавив или удалив несколько элементов списка
+for fruit in (fruits):
+    symb = max_len - len(fruit)
+    print(i,(" ")*symb,fruit)
+    i += 1
