@@ -5,3 +5,11 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+my_list = [61, 43, -81, 19, -34, 2, -33, 25, 65, 34]
+my_new_list = []
+for el in my_list:
+    sqrt_el = el ** 0.5
+    if type(sqrt_el) == float and sqrt_el.is_integer():
+        my_new_list.append(int(sqrt_el))
+print(my_new_list)
