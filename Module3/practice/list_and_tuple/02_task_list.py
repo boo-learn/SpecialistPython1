@@ -4,3 +4,7 @@
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
 # TODO: your code here
+line = 1
+for fruit in fruits:
+    print(line, fruit)
+    line += 
