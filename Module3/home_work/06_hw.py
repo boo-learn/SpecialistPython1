@@ -34,12 +34,28 @@ items = [
 # Найдите:
 print("Товары на складе представлены брэндами: ")
 
-# TODO: your code here
+brand_name =[]
+for br in items:
+    brand = br["brand"]
+    brand_name.append(brand)
+for brand in brand_name.copy():
+    if brand_name.count(brand) != 1:
+        brand_name.remove(brand)
+print(brand_name)
 
 print("На складе больше всего товаров брэнда(ов): ")
 
-# TODO: your code here
+# TODO: your code here 
 
 print("На складе самый дорогой товар брэнда(ов): ")
 
-# TODO: your code here
+biggest_price = items[0]["price"]
+hight_price = {}
+
+for br in items:
+    pr = br['price']
+    if pr > biggest_price:
+        biggest_price = pr
+        hight_price = br
+
+print("Самый дорогой товар бренда:", hight_price["brand"])
