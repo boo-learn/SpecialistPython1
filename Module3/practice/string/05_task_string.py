@@ -6,3 +6,12 @@
 
 # TODO: your code here
 
+string = 'И темен город. Мороз узором дорог не мети.'
+new_string = string.lower()
+new_string = new_string.replace(' ', '')
+new_string = new_string.replace('.', '')
+back_string = new_string[::-1]
+if back_string == new_string:
+    print('Строка является «перевертышем», если удалить из нее все пробелы и знаки пуктуации.')
+else:
+    print('Строка не является «перевертышем», если удалить из нее все пробелы и знаки пуктуации.')
