@@ -5,3 +5,23 @@
 
 # При решении задачи требуется учесть формат входных данных.
 # Если входные данные некорректные, сообщить об этом.
+
+
+while True:
+    try:
+        str_list = input("Введите числа:").split()
+        num_list = list(map(int, str_list))
+    except ValueError:
+        print('Некорректные данные! Попробуйте ещё раз..')
+    except Exception as err:
+        print('Неожиданное исключение:', err)
+    else:
+        break
+
+
+for num in num_list:
+    if num < 0:
+        num_list.remove(num)
+        
+print(min(num_list))
+
