@@ -34,7 +34,11 @@ items = [
 # Найдите:
 print("Товары на складе представлены брэндами: ")
 
-# TODO: your code here
+brands = []
+for i in items:
+    brands.append(i["brand"])
+
+print(set(brands))
 
 print("На складе больше всего товаров брэнда(ов): ")
 
