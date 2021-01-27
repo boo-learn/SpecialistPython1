@@ -3,7 +3,7 @@
 
 def average(*args):
     # TODO: your code here
-    pass
+    return sum(args) / len(args)
 
 
 print(average(3, 4, 8))
