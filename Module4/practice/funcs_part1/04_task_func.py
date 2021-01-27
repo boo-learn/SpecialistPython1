@@ -4,8 +4,8 @@
 def can_triangle(p1, p2, p3):
     a = ((p2[0] - p1[0]) ** 2 + (p2[1] - p1[1]) ** 2) ** 0.5
     b = ((p3[0] - p2[0]) ** 2 + (p3[1] - p2[1]) ** 2) ** 0.5
-    c = ((p3[0] - x1) ** 2 + (p3[1] - p1[1]) ** 2) ** 0.5
-    if a + b > c or a + c > b:
+    c = ((p3[0] - p1[0]) ** 2 + (p3[1] - p1[1]) ** 2) ** 0.5
+    if a + b > c and a + c > b and c + b > a:
         return print("YES")
     return print ("NO")
 
