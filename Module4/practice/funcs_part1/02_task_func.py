@@ -4,7 +4,16 @@
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
 def palindrome(number):
-    pass
+
+    first_dig = number
+    while first_dig//10 !=0:
+        first_dig = first_dig//10
+
+    last_dig = number%10
+
+    if first_dig == last_dig:
+        return "палиндромом"
+    return "не палиндромом"
 
 
 # Тестируем функцию
