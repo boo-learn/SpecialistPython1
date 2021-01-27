@@ -2,6 +2,15 @@
 # сколько денег получит Иван в результате.
 
 def deposit(x, a, n):
-    pass
+    for _ in range(n):
+        x += x*a/100
+    return x
 # функция принимает три числа и возвращает одно - итоговая сумма на счету Ивана.
 # Проценты на вклад начисляются один раз в год.
+
+
+money = int(input('Денег: '))
+percent = int(input('Процент: '))
+years = int(input('Лет: '))
+
+print(deposit(money, percent, years))
