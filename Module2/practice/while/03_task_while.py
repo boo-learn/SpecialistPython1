@@ -8,5 +8,11 @@
 # 12
 # 123
 # 1234
+user_input = input('Enter number: ')
+i = 1
+full_line = ''
 
-# TODO: your code here
+while i <= int(user_input):
+    full_line = full_line + str(i)
+    i += 1
+    print(full_line)
