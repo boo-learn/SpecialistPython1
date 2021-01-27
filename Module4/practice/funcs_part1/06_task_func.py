@@ -1,8 +1,8 @@
-# Напишите функцию, которая проверит, что точка (x, y)
-# находится строго внутри окружности с центром в точке (xc, yc) и радиусом r:
+def distance(x1, y1, x2, y2):
+    res = (((x2 - x1) ** 2) + ((y2 - y1) ** 2)) ** 0.5
+    return res
 
 def point_in_circle(x, y, xc, yc, r):
-    # TODO: your code here
-    pass
-
-# Не забудьте протестировать вашу функцию
+    point_dist = distance(x, y, xc, yc)
+    if point_dist < r:
+        return
