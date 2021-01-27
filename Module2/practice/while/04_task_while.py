@@ -7,3 +7,14 @@
 # Формат выходных данных: Необходимо вывести сумму чисел написанных на кирпичах.
 
 # TODO: your code here
+
+user_input = int(input('Enter number: '))
+i = 0
+level_bricks = 0
+
+while i < user_input:
+    level = i + 1
+    level_bricks = level*level + level_bricks
+    i += 1
+
+print(level_bricks)
