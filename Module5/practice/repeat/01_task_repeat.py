@@ -3,5 +3,8 @@
 # , где size - размер генерируемого списка c элементами в диапазоне от of до to.
 
 def gen_list(size, of, to):
-    pass
-
+    import random
+    result_list = []
+    for _ in range(size):
+        result_list.append(random.randint(of, to))
+    return result_list
