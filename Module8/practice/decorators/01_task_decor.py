@@ -7,3 +7,18 @@
 # *23*
 # ****
 # (кол-во звездочек зависит от длины возвращаемого значения)
+    
+def star_decorator(foo):
+    def wrapper(n):
+        star_num = len(n)+2
+        print('*' * star_num)
+        print('*'+foo(n)+'*')
+        print('*' * star_num)
+    return wrapper
+
+@star_decorator
+def ret_str(in_str):
+    return in_str
+
+
+ret_str('Cool')
