@@ -2,7 +2,9 @@
 
 def max2(n1, n2):
     # TODO: your code here
-    pass
+    if n1 > n2:
+        return n1
+    return n2
 
 
 # Тестируем функцию
