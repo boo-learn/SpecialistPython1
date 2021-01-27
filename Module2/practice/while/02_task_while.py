@@ -3,3 +3,6 @@
 # то программа запрашивает ввод снова.
 
 # TODO: your code here
+user_input = ''
+while user_input != 'хватит':
+    user_input = input('Может хватит? ')
