@@ -3,4 +3,12 @@
 # Найдите ее, зная номера оставшихся карточек.
 # Вводится число N, далее еще N − 1 чисел: номера оставшихся карточек (различные числа от 1 до N).
 # Программа должна вывести номер потерянной карточки.
+import random
+N = 6
+n_list = [n for n in range(1, N+1)]
+print(n_list)
+n_list.remove(random.randint(1, 6))
+print(n_list)
+lost_card = sum([n for n in range(1, N+1)]) - sum(n_list)
+print(lost_card)
 
