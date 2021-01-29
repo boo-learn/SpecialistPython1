@@ -25,3 +25,22 @@
 # 2
 # Выходные данные-2:
 # 0
+
+h = 20 #int(input('Введите высоту дома: '))
+f = 7  #int(input('Введите этаж доставки: '))
+k = 4  #int(input('Введите через сколько этажей останавливается лифт: '))
+
+# Функция возращает оптимальную сумму доставки
+# deliver_floor - этаж доставки
+# lower_floor - ближайший нижний этаж на котором останавливается лифт
+# higher_floor - ближайший верхний этаж на котором останавливается лифт
+def get_best_price(deliver_floor, lower_floor, higher_floor):
+    rise_bill = (deliver_floor - lower_floor) * 200
+    down_bill = (higher_floor - deliver_floor) * 100
+    return rise_bill if rise_bill < down_bill else down_bill
+
+lower_floor = (f - 1) // k * k + 1                           # Находим нижний ближайший этаж с лифтом
+higher_floor = lower_floor + k if lower_floor + k < h else h # Находим верхний ближайший этаж с лифтом
+result = get_best_price(f, lower_floor, higher_floor)
+
+print('Цена: ', result)
