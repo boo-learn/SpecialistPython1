@@ -5,4 +5,27 @@
 # Расположение точек относительно друг друга на координатной прямой произвольное.
 # Формат выходных данных:
 # Выведите, во сколько раз отрезок AB больше, чем отрезок CD. Ответ введите с точностью до 6-ти знаков после запятой.
+def length_cut_off(x,y):
+    if x<=0 and y <=0 or x >=0 and y>=0:
+        return abs(x-y)
+    return abs(x) + abs(y)
 
+
+while True:
+    try:
+        a = int(input("введите для отрезка AB целое число A: "))
+        b = int(input("введите для отрезка AB целое число B: "))
+        c = int(input("введите для отрезка CD целое число C: "))
+        d = int(input("введите для отрезка CD целое число D: "))
+    except ValueError:
+        print("Думай!")
+    else:
+        break
+
+
+try:
+    res = round(length_cut_off(a,b)/length_cut_off(c,d), 6)
+except ZeroDivisionError:
+    print("Больше в 0 раз")
+else:
+    print("Отрезок AB больше CD в {} раз".format(res))
