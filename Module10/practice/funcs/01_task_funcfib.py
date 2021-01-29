@@ -2,5 +2,17 @@
 # Пример ряда чисел Фибоначчи: 0 1 1 2 3 5 8 13 ...
 # (сумма элемента равна сумме двух предыдущих)
 
+
+
 def fib(n):
-    pass
+    a, b = 0, 1
+    if n == 1:
+        return a
+    if n == 2:
+        return b
+    while n - 2 > 0:
+        a, b = b, a+b
+        n -= 1
+    return b 
+    
+print(fib(7))
