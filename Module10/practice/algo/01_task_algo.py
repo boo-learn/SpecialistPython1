@@ -4,3 +4,11 @@
 # Вводится число N, далее еще N − 1 чисел: номера оставшихся карточек (различные числа от 1 до N).
 # Программа должна вывести номер потерянной карточки.
 
+N = 6
+
+n_list = [n for n in range(1, N+1)]
+print(n_list)
+n_last = [1, 2, 3, 4, 6]
+print(n_last)
+lost_card = sum(n_list) - sum(n_last)
+print(lost_card)
