@@ -4,3 +4,14 @@
 # 1. Количество элементов списка не превышающие 10
 # 2. Сумму всех положительных элементов списка
 # 3. Среднее арифметическое всех четных элементов
+my_list = [-15, 10, -11, 8, -7, 4, 17, 16, 12, 3]
+
+el_more_10 = len(list(filter(lambda el: el<10,my_list)))
+print("Количество элементов списка не превышающие 10: ", el_more_10)
+
+sum_positive_el = sum(list(filter(lambda el: el>0,my_list)))
+print("Сумму всех положительных элементов списка: ", sum_positive_el)
+
+list_even = list(filter(lambda el: el%2 ==0,my_list))
+mid_arif_even = sum(list_even)/len(list_even)
+print("Сумму всех положительных элементов списка: ", sum_positive_el)
