@@ -7,3 +7,13 @@
 # *23*
 # ****
 # (кол-во звездочек зависит от длины возвращаемого значения)
+def dunc_dec(func):
+    def wrapper():
+        return ((len(func()) + 2) * "*") + "\n" + ("*"+func()+"*\n") + ((len(func()) + 2) * "*")
+    return wrapper
+
+@dunc_dec
+def func():
+    return "Qwerty!@#$%"
+
+print(func())
