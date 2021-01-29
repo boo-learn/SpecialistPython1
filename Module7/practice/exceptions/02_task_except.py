@@ -4,3 +4,22 @@
 # Алгоритм проверки на високосный год оформите в виде отдельной функции.
 #
 # Входная строка содержит два целых числа – номер месяца (возможно, неправильный) и номер года.
+
+def days_in_year(num_year):
+    if (num_year % 4 == 0) and (num_year % 100 != 0) or (num_year % 400 == 0):
+        return 366
+    return 365
+
+
+while True:
+    try:
+        data = input('Введите номер месяца и года через пробел: ').split(' ')  # Считываем введенные данные
+        data = list(map(int, data))                                            # Перобразовываем текстовые в числовые (кортеж)
+        print(data)
+        print(data[0])
+        if len(str(data[0])) > 2:
+            raise ValueError
+        break
+    except ValueError:
+        print('Вы ввели некорректные данные')
+        print('Повторите ввод')
