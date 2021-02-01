@@ -7,4 +7,13 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+user_input = int(input('How many cows: '))
+
+if 10 <= user_input <= 19:
+    print(user_input, 'Corov')
+elif 0 <= user_input % 10 <= 1:
+    print(user_input,' Corova')
+elif 2 <= user_input % 10 <= 4:
+    print('Corovy')
+else:
+    print('Corov')
