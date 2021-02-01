@@ -5,4 +5,13 @@
 # Формат выходных данных
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
-# TODO: your code here
+n = 5
+m = 4
+k = 16
+
+s = n * m
+
+if k < s and n // k == 0 or k < s and m // k == 0:
+    print('yes')
+else:
+    print('No')
