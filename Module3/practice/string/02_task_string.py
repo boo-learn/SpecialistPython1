@@ -4,9 +4,21 @@
 
 text = "Вася самый умный! Вася лучше всех! И ждет его успех! Вот так!"
 
-# TODO: your code here
+#вариант с циклом
+i = 0
+true_text = ''
 
-print(text)
+while i <= len(text):
+    if text[i] == '!':
+        true_text = true_text + '.'
+    else:
+        true_text = true_text + text[i]
+    i += 1
+    print (true_text)
+
+#Вариант с методом replace
+
+print (text.replace('!', '.'))
 
 # Важно! Ваше решение должно работать не только с данной строкой, но и слюбой другой.
 # Проверьте это, заменив текст примера на любой другой.
