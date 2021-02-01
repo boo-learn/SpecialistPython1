@@ -4,5 +4,20 @@
 
 # Пример строки перевертыша: "И темен город. Мороз узором дорог не мети."
 
-# TODO: your code here
+text = "И темен город. Мороз узором дорог не мети."
 
+no_space = text.replace(' ','').replace('.','').lower()
+
+i = 0
+j = -1
+
+while i < len(no_space):
+    if no_space[i] == no_space[j]:
+        i += 1
+        j -= 1
+    else:
+        print('THey are not equal')
+        break
+
+if i == len(no_space):
+    print('They are equal')
