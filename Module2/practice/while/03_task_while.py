@@ -9,4 +9,11 @@
 # 123
 # 1234
 
-# TODO: your code here
+n = int(input("Enter natural number: "))
+stair = ""
+i = 1
+
+while i <= n:
+    stair = stair + str(i)
+    print(stair)
+    i += 1
