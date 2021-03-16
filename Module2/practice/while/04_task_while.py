@@ -6,4 +6,12 @@
 # Формат входных данных: Программе даётся целое число — количество уровней в пирамиде
 # Формат выходных данных: Необходимо вывести сумму чисел написанных на кирпичах.
 
-# TODO: your code here
+n = int(input("Enter number of levels in pyramid: "))
+i = 1
+total = 0
+
+while i <= n:
+    total = total + i * i
+    i += 1
+
+print(total)
