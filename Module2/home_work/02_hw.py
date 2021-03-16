@@ -7,4 +7,15 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+n = int(input("Enter number of cows: "))
+remainder = n % 10
+
+if 11 <= n <= 14:
+        print(n, 'коров')
+else:
+    if remainder == 1:
+        print(n, 'корова')
+    if 2 <= remainder <= 4:
+        print(n, 'коровы')
+    if remainder == 0 or (5 <= remainder <= 9):
+        print(n, 'коров')
