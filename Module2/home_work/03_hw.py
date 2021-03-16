@@ -28,4 +28,8 @@
 # 19 189.81 Rub.
 # 20 199.80 Rub.
 
-# TODO: your code here
+price = float(input("price:"))
+
+for i in range(1, 21):
+    new_price = float(price * i)
+    print(f"{i} {new_price} Rub.")
