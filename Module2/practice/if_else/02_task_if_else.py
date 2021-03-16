@@ -2,4 +2,11 @@
 # Формат входных данных: Целое положительно число
 # Формат выходных данных: Если число оканчивается цифрой 5, вывести «YES», в противном случае — вывести «NO».
 
-# TODO: your code here
+value = int(input("Enter value: "))
+
+print(str(value)[-1])
+
+if value % 10 == 5:
+    print("Value ends on 5")
+else:
+    print("Value does not end on 5")
