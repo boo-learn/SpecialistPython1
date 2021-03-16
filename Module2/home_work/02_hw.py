@@ -7,4 +7,30 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+"""
+1 korova
+
+2 korovy
+3 korovy
+4 korovy
+
+5 korov
+.
+.
+11 korov
+12 korov
+
+0 korov!!
+"""
+n = int(input ("Please enter n: "))
+
+if n == 0 or (n >= 11 and n <= 14):
+        print(n, 'korov')
+else:
+        last = n % 10
+        if last == 1:
+                print(n, 'korova')
+        if last >= 2 and last <= 4:
+                print(n, 'korovy')
+        if last >= 5 and last <= 9:
+                print(n, 'korov')
