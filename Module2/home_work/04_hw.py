@@ -14,3 +14,10 @@
 #    #
 #    #
 ######
+
+a = int(input('a: '))
+for n in range(a):
+    if n == 0 or n == a - 1:
+        print(a * '#')
+    else:
+        print('#', (a - 2) * ' ', '#', sep='')
