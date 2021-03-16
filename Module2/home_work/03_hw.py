@@ -28,4 +28,9 @@
 # 19 189.81 Rub.
 # 20 199.80 Rub.
 
-# TODO: your code here
+x = float(input ("Please input price: "))
+i = 1
+
+while i < 21:
+    print (i, x*i, "Rub")
+    i = i+1
