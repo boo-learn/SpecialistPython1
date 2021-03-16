@@ -5,6 +5,15 @@
 # Формат входных данных: Вводится неотрицательное целое число— номер года.
 # Формат выходных данных: Выведите количество дней в данном году.
 
-year = int(input("Год: "))
+from datetime import date
+from calendar import monthrange
 
-# TODO: your code here
+year = int(input("year:"))
+
+_, last_day = monthrange(year, 12)
+
+start_date = date(year, 1, 1)
+stop_date = date(year, 12, last_day)
+cnt_days = stop_date - start_date
+
+print(cnt_days.days)
