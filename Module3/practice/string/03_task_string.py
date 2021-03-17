@@ -1,3 +1,4 @@
 # Подсчитать количество букв «а» во введенной строке
 
-# TODO: your code here
+text = input("Введите текст где есть несколько а(English): ")
+print(text.count('a'))
