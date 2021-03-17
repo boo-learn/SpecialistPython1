@@ -6,3 +6,15 @@
 
 # TODO: your code here
 
+# text = "И темен город. Мороз узором дорог не мети."
+text = str(input("text:"))
+
+text = text.replace(".!,", " ")
+text = text.replace(".", " ")
+text = text.replace(" ", "")
+text = text.lower()
+
+text_r = text[::-1]
+
+if text == text_r:
+    print("OK")
