@@ -7,4 +7,10 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat
 # Примечание: для генериации текста можете воспользоваться сайтом: https://ru.lipsum.com/
 # Примечание: обратите внимание на перенос длинной строки на новую строку
 
-# TODO: your code here
+i = 0
+
+for word in text.split():
+    if len(word) > 7:
+        i += 1
+
+print(i)
