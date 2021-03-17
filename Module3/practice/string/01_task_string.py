@@ -6,5 +6,10 @@
 name = input("Имя: ")
 surname = input("Фамилия: ")
 
+name_rp = name[0].upper()
+name = name.replace(name[0], name_rp)
+
+surname_rp = surname[0].upper()
+surname = surname.replace(surname[0], surname_rp)
 
 print(name, surname)
