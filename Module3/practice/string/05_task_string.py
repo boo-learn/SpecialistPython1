@@ -4,5 +4,15 @@
 
 # Пример строки перевертыша: "И темен город. Мороз узором дорог не мети."
 
-# TODO: your code here
+import re
 
+string = "Ты, милок, иди яром: у дороги мина, за дорогой огород, а за ним и город у моря; иди, коли мыт."
+
+substr = re.sub(r'[^\w\s]', '', string)
+
+subsub_str = substr.replace(" ", "").casefold()
+
+if subsub_str == subsub_str[::-1]:
+    print(subsub_str, "=", subsub_str[::-1], "перевертыш!")
+else:
+    print(subsub_str, "=", subsub_str[::-1], "не перевертыш!")
