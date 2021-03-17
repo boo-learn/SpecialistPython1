@@ -5,8 +5,6 @@
 string = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
 words = string.split(" ")
 
-
-i = 0
 count = 0
 for word in words:
     if len(word) > 5:
