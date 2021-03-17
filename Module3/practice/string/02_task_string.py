@@ -4,7 +4,7 @@
 
 text = "Вася самый умный! Вася лучше всех! И ждет его успех! Вот так!"
 
-# TODO: your code here
+text = text.replace("!", ".")
 
 print(text)
 
