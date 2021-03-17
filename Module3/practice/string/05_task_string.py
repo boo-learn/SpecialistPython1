@@ -5,4 +5,15 @@
 # Пример строки перевертыша: "И темен город. Мороз узором дорог не мети."
 
 # TODO: your code here
+string = input()
 
+for char in string:
+    if not char.isalpha():
+        string = string.replace(char, '')
+
+string = string.lower()
+
+if string == string[::-1]:
+    print('YES')
+else:
+    print('NO')
