@@ -8,3 +8,16 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat
 # Примечание: обратите внимание на перенос длинной строки на новую строку
 
 # TODO: your code here
+text = input()
+signs = ",.!?-"
+
+for char in text:
+    if char in signs:
+        text = text.replace(char, '')
+
+n = 0
+
+for word in text.split(' '):
+    if len(word) > 7:
+        n += 1
+print(n)
