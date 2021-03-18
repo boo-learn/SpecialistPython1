@@ -7,4 +7,5 @@
 item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub", "count": "10"}
 dollar_rate = 74.12
 
-# TODO: your code here
+sum = round((float(item["price"]) / float(dollar_rate)) * float(item["count"]), 2)
+print(sum)
