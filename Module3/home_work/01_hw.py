@@ -3,7 +3,15 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
-
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
+
+string = ""
+
+for i in names: 
+    string = string + i + ","
+
+string = string[0:len(string)-1]
+print (string)
+
+# print(*names, sep=',') #StackOverflow portal recommendation
