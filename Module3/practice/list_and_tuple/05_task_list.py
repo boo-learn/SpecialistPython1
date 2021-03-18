@@ -4,8 +4,16 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
+string_len = len(max(fruits, key=len))
+number = 1
 
-# TODO: your code here
+for fruit in fruits:
+    if len(fruit) < string_len:
+        print(str(number) + "." + " " * (string_len - len(fruit)) + fruit)
+    else:
+        print(str(number) + "." + fruit)
+    number += 1
+
 
 # Пример вывода:
 # 1. яблоко
