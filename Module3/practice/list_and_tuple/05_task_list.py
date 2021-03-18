@@ -9,9 +9,9 @@ number = 1
 
 for fruit in fruits:
     if len(fruit) < string_len:
-        print(str(number) + "." + " " * (string_len - len(fruit)) + fruit)
+        print(str(number) + ". " + " " * (string_len - len(fruit)) + fruit)
     else:
-        print(str(number) + "." + fruit)
+        print(str(number) + ". " + fruit)
     number += 1
 
 
