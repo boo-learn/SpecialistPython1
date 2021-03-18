@@ -2,9 +2,9 @@
 # Вывести на экран сумму всех элементов.
 
 my_list = [1, 3, 4, -1, -5, -10, 10, 3, 7, 5, 8, 3, 0]
-sum = 0
+my_sum = 0
 
 for el in my_list:
-    sum = sum + el
+    my_sum = my_sum + el
 
-print(sum)
+print(my_sum)
