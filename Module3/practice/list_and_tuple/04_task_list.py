@@ -2,3 +2,8 @@
 # Вывести на экран сумму всех положительных элементов.
 
 # TODO: your code here
+my_sum = 0
+for num in numbers:
+    if num > 0:
+        my_sum += num
+print(my_sum)
