@@ -3,7 +3,13 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+# вариант 1
+for name in names:
+    print(name, end=", ")
+print("\n")
+
+# вариант 2
+print(', '.join(names))
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
