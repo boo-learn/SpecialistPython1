@@ -3,4 +3,5 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+print ("Names: ", names)
+print ("The longes name is", max(names,key= len))
