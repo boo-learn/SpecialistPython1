@@ -2,3 +2,7 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+my_sum = 0
+for num in numbers:
+    my_sum += num
+print(my_sum)
