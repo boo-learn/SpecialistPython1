@@ -4,8 +4,16 @@
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
 def palindrome(number):
-    pass
-
+    reverse = 0
+    number_init = number
+    while number > 0:
+        dig = number % 10
+        reverse = reverse * 10 + dig
+        number = number // 10
+    if reverse == number_init:
+        print('Yes')
+    else:
+        print('No')
 
 # Тестируем функцию
 print(palindrome(3454))
