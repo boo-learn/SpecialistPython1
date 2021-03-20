@@ -31,15 +31,51 @@ items = [
         "price": 1700
     },
 ]
-# Найдите:
-print("Товары на складе представлены брэндами: ")
 
-# TODO: your code here
+unique_brands = []
+for elem in items:
+    if elem.get("brand") not in unique_brands:
+        unique_brands.append(elem.get("brand"))
 
-print("На складе больше всего товаров брэнда(ов): ")
+print("Товары на складе представлены брэндами:", ', '.join(unique_brands))
 
-# TODO: your code here
+all_brands = []
+for elem in items:
+    all_brands.append(elem.get("brand"))
 
-print("На складе самый дорогой товар брэнда(ов): ")
+brands_count = {}
+for brand in unique_brands:
+    brands_count[brand] = all_brands.count(brand)
 
-# TODO: your code here
+max_count = 0
+for brand in unique_brands:
+    if brands_count.get(brand) >= max_count:
+        max_count = brands_count.get(brand)
+
+
+for brand in unique_brands:
+    if brands_count.get(brand) < max_count:
+        brands_count.pop(brand)
+
+print("На складе больше всего товаров брэнда(ов):", ', '.join(brands_count.keys()))
+print("Количество:", max_count, "шт")
+
+brands_price = []
+max_price = 0
+for elem in items:
+    if elem.get("price") >= max_price:
+        max_price = elem.get("price")
+        brands_price.append(elem)
+
+brands_price_copy = brands_price.copy()
+for item in brands_price:
+    if item.get("price") < max_price:
+        brands_price_copy.remove(item)
+
+print("На складе самый дорогой товар брэнда(ов):")
+
+for elem in brands_price_copy:
+    print(elem.get("brand"))
+    print("Наименование товара -", elem.get("name"))
+
+print("Цена:", max_price)
