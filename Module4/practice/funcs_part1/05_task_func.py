@@ -3,7 +3,19 @@
 # Если по заданным точкам треугольник построить нельзя, выведите соответствующее сообщение.
 # Подсказка: для нахождения площади используйте Теорему Герона
 
-# TODO: your code here
+def distance(x1, y1, x2, y2):
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
 
+def can_triangle(p1, p2, p3):
+    a = distance(*p1, *p2)
+    b = distance(*p2, *p3)
+    c = distance(*p1, *p3)
+    if (a + b > c) and (a + c > b) and (b + c > a):
+        P = (a + b + c) / 2
+        S = (P * (P - a) * (P - b) * (P - c)) ** 0.5
+        return {"P": P * 2, "S": S}
+    else:
+        return("not triangle")
 
-# Не забудьте протестировать вашу функцию
+print(can_triangle((3, 8), (6, 4), (3, 4)))
+#print(can_triangle((0, 0), (0, 0), (0, 0)))
