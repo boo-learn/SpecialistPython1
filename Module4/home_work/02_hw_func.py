@@ -4,10 +4,30 @@
 
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
+
 def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
 
+a1 = int(input("Please enter A coordinate x: "))
+a2 = int(input("Please enter A coordinate y: "))
 
-# TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+b1 = int(input("Please enter B coordinate x: "))
+b2 = int(input("Please enter B coordinate y: "))
+
+c1 = int(input("Please enter C coordinate x: "))
+c2 = int(input("Please enter C coordinate y: "))
+
+AB = distance(a1, a2, b1, b2)
+BC = distance(b1, b2, c1, c2)
+AC = distance(a1, a2, c1, c2)
+
+print("Самый короткий отрезок:")
+if AB < BC:
+    if AB < AC:
+        print ("AB")
+    else:
+        print ("AC")
+elif BC < AC:
+    print ("BC")
+
+#print("Самый короткий отрезок:", min_el)  # Выводим название отрезка, например “АС”.
