@@ -3,9 +3,9 @@
 
 
 def average(*args):
+    div = 0
+    total = 0
     for arg in args:
-        div = 0
-        total = 0
         total = total + arg
         div += 1
     return total / div
