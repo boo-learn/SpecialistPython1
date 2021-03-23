@@ -6,3 +6,9 @@ import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
 # TODO: your code here
+
+n = int(input("n:"))
+for el in range(n):
+    digit = random.randint(-100, 100)
+    numbers.append(digit)
+print(numbers)
