@@ -17,4 +17,7 @@
 # #
 
 
-# TODO: your code here
+a = int(input("a="))
+for i in range(a) :
+    tmp = ["#" if i == j or a - i - 1 == j else ' ' for j in range(a)]
+    print(''.join(tmp))
