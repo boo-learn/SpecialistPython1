@@ -10,3 +10,10 @@
 # 1234
 
 # TODO: your code here
+n = int(input("input number:"))
+i = 1
+stair = ""
+while i <= n:
+    stair = stair + str(i)
+    print(stair)
+    i += 1
