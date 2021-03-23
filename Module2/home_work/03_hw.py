@@ -29,3 +29,8 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+cost = float(input("cost = "))
+i = 1
+while i<= 20 :
+    print(i, round(cost * i,2), "Rub.")
+    i += 1
