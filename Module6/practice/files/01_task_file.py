@@ -1,6 +1,17 @@
-# Дан файл data/limericks.txt с лимериками(короткими стихотворениями)
+f = open("my_file.txt", "r", encoding="utf-8")
+sym_count = 0
 
-# 1. Выведите содержимое файла в консоль
-# 2. Узнайте количество непробельный символов в данном файле
-# 3. Узнайте количество стихотворений, если известно,
-# что каждое стихотворение отделяется пустой строкой от предыдущего
+
+for line in f:
+    line = line.replace(" ", "")
+    line = line.replace("\n", "")
+    sym_count += len(line)
+    # if line == "\n":
+    #     lick_count += 1
+    # for char in line:
+    #     if char != " " and char != "\n":
+    #         sym_count += 1
+
+    print(line.rstrip())
+print()
+print("Число символов в файле -", sym_count)
