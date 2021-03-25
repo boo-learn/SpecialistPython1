@@ -5,3 +5,14 @@
 # Пример: для строки 'pythonist'
 # Получим словарь: {'p': 1, 'y': 1, 't': 2, 'h': 1, 'o': 1, 'n': 1, 's': 1, 'i': 1}
 # Примечание: т.к. ключи неупорядочены, порядок следования ключей может быть произвольным
+
+def str4dict(string):
+    from collections import Counter
+    words = list(string)
+    words_dict = dict(Counter(words))
+
+    return words_dict
+
+
+print(str4dict("pythonist"))
+
