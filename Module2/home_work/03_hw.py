@@ -29,3 +29,9 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+p, i = 0, 1;
+while not (0 < p <= 105):
+	p = float(input("Price: "))
+while i <= 20:
+	print('{:2d}'.format(i), "items cost", '{:7.2f}'.format(p * i))
+	i += 1
