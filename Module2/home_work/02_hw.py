@@ -8,3 +8,14 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+#cows
+n=int(input('enter number:'))
+
+if n>4 and n<=20:
+    print (n,'коров')
+elif n%10 == 1:
+    print (n,'корова')
+elif n%10 == 2 or n%10 == 3 or n%10 == 4:
+    print (n,'коровы')
+else:
+    print (n,'коров')
