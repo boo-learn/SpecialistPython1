@@ -3,3 +3,9 @@
 # Формат выходных данных: Выведите все числа, требуемые по условию задачи.
 
 # TODO: your code here
+a, b = int(input("a: ")), int(input("b: "))
+if a % 2 != 0:
+    a += 1
+while a <= b:
+    print(a)
+    a += 2
