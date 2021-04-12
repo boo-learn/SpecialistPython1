@@ -28,4 +28,11 @@
 # 19 189.81 Rub.
 # 20 199.80 Rub.
 
-# TODO: your code here
+x = float(input("Введите стоимость товара: "))
+multiplier = 1
+
+while multiplier <= 20:
+    price = x * multiplier
+    rounded = round(price, 2)
+    print(rounded, "Руб")
+    multiplier +=1
