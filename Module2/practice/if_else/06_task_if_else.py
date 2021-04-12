@@ -8,3 +8,9 @@
 year = int(input("Год: "))
 
 # TODO: your code here
+if year % 400 != 0 and year % 4 == 0:
+	print("Days: ", 365)
+elif year % 4 != 0:
+	print("Days: ", 365)
+else:
+	print("Days: ", 366)
