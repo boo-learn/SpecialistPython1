@@ -3,3 +3,8 @@
 # Формат выходных данных: Выведите все числа, требуемые по условию задачи.
 
 # TODO: your code here
+a = int(input())
+b = int(input())
+while a <= b:
+    print(a)
+    a += 1
