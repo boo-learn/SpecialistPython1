@@ -17,3 +17,24 @@
 # 284 220
 
 # TODO: your code here
+from copy import copy
+
+n = int(input('введите число от 1 до 10 000: '))
+
+while n != 0:
+    n_friend = 0
+    n_2 = n // 2
+    total = 0
+    for i in range(1, n_2 + 1):
+        if n % i == 0:
+            total += i
+    if n != total:
+        n_friend = copy(total)
+        n_2 = total // 2
+        total = 0
+        for i in range(1, n_2 + 1):
+            if n_friend % i == 0:
+                total += i
+        if n == total:
+            print(f'{n}, {n_friend}')
+    n -= 1
