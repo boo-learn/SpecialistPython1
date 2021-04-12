@@ -14,3 +14,9 @@
 #    #
 #    #
 ######
+a = int(input('a: '))
+print('#' * a)
+string = '#' + ' ' * (a - 2) + '#'
+for i in range(2, a):
+    print(string)
+print('#' * a)
