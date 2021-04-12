@@ -29,3 +29,7 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+cost_one = float(input())
+
+for i in range(1, 21):
+    print(i, cost_one * i, 'Rub')
