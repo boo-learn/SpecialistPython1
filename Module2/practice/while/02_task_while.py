@@ -3,3 +3,9 @@
 # то программа запрашивает ввод снова.
 
 # TODO: your code here
+
+n = str()
+
+while n != str("хватит"):
+    n = input(str());
+    print ("еще?",)
