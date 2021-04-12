@@ -3,4 +3,8 @@
 # Формат входных данных: дано целое число m (1 ≤ m ≤ 12).
 # Формат выходных данных: требуется вывести название времени года
 
-# TODO: your code here
+import calendar
+m = int(input("m:"))
+
+print(calendar.month_name[m])
+
