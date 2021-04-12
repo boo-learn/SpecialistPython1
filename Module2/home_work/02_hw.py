@@ -8,3 +8,13 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+k = input("кол-во коров: ")
+flex = ""
+if 11 <= int(k) % 100 <= 19:
+    flex = ""
+elif int(k) % 10 == 1:
+    flex = "а"
+elif 2 <= int(k) % 10 <= 4:
+    flex = "ы"
+
+print(k + " коров" + flex)
