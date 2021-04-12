@@ -3,3 +3,8 @@
 # то программа запрашивает ввод снова.
 
 # TODO: your code here
+
+message = ''
+while message != "хватит":
+    message = input("Напишите слово хватит")
+    print(message)
