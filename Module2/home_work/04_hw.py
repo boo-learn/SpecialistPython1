@@ -14,3 +14,23 @@
 #    #
 #    #
 ######
+
+a = int(input("Сторона квадрата: "))
+i = 1
+
+while i <= a:
+	if i == 1 or i == a:
+		j = 1
+		s = ""
+		while j <= a:
+			s += "#"
+			j += 1
+	else:
+		j = 2
+		s = "#"
+		while j < a:
+			s += " "
+			j += 1
+		s += "#"
+	print(s)
+	i += 1
