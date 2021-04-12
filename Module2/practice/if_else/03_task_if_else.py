@@ -3,3 +3,5 @@
 # Формат выходных данных: Выведите «YES», если треугольник равнобедренный, и «NO» в противном случае.
 
 # TODO: your code here
+a, b , c = input("A: "), input("B: "), input("C: ")
+print("YES" if a==b or a==c or b==c else "NO")
