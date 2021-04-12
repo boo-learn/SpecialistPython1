@@ -29,3 +29,10 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+x=float(input('enter number:'))
+i=1
+
+while i<=20:
+    cost=i*x
+    print (i,' ',cost,'rubles')
+    i+=1
