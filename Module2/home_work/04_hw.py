@@ -14,3 +14,31 @@
 #    #
 #    #
 ######
+
+#square
+
+n=int(input('enter n:'))
+
+i = 1
+ii = 1
+s1 = str('')
+s2 = str('')
+
+while i<=n:
+    s1 += '#'
+    i += 1
+print (s1)
+
+i = 2
+
+while i<n:
+    while ii<=n:
+        if ii == 1 or ii == n:
+            s2 += '#'
+        else:
+            s2 += ' '
+        ii += 1
+    i += 1
+    print (s2)
+
+print (s1)
