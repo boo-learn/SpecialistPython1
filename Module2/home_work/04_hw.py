@@ -14,3 +14,24 @@
 #    #
 #    #
 ######
+
+a = 0
+
+while a <= 2 or a > 30:
+    a = float(input("Введите значение больше 2, но меньше 31: "))
+
+a = a - 1
+
+n = a
+
+while n >= 0:
+    line = ""
+    m = a
+    while m >= 0:
+        if m == 0 or m == a or n == 0 or n == a:
+            line += "#"
+        else:
+            line += " "
+        m -= 1
+    n -= 1
+    print(line)
