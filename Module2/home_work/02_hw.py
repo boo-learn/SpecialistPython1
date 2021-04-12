@@ -8,3 +8,13 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+cows = int(input('Кол-во коров: '))
+n = int(str(cows)[-1])
+if 11 <= cows <= 20 or n >= 5:
+    s = 'коров'
+elif n == 1:
+    s = 'корова'
+else:
+    s = 'коровы'
+
+print(f'На лугу пасется {cows} {s}')
