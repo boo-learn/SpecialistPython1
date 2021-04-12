@@ -18,3 +18,23 @@
 
 
 # TODO: your code here
+a = int(input('a: '))
+a_2 = abs(-a // 2)
+i = 1
+while i < a_2:
+    string = ' ' * (i - 1) + '#' + ' ' * (a - i * 2) + '#' + ' ' * (i - 1)
+    print(string)
+    i += 1
+
+if a % 2 != 0:
+    string = ' ' * (i - 1) + '#' + ' ' * (i - 1)
+    print(string)
+    i -= 1
+else:
+    string = ' ' * (i - 1) + '#' + ' ' * (a - i * 2) + '#' + ' ' * (i - 1)
+    print(string)
+
+while i != 0:
+    string = ' ' * (i - 1) + '#' + ' ' * (a - i * 2) + '#' + ' ' * (i - 1)
+    print(string)
+    i -= 1
