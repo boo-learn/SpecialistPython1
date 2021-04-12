@@ -4,3 +4,11 @@
 # Формат выходных данных: требуется вывести название времени года
 
 # TODO: your code here
+m = 0;
+while not (1 <= m <= 12):
+	m = int(input("Input correct month number: "))
+if m == 12:
+	m = 0;
+seasons = ["winter","spring","summer","autumn"]
+#months:    0-2,     3-5,     6-8,     9-11
+print( seasons[m // 3] )
