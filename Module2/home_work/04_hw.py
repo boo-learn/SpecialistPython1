@@ -14,3 +14,8 @@
 #    #
 #    #
 ######
+a = int(input('a: '))
+i, s_ext, s_int = 1, "#" * a, "#" + " " * (a-2) + "#"
+while i <= a:
+	print(s_ext if i in (1,a) else s_int)
+	i += 1
