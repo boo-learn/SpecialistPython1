@@ -14,3 +14,15 @@
 #    #
 #    #
 ######
+a = int(input('a = '))
+
+for i in range(a):
+    line = ''
+    for j in range(a):
+        if i == 0 or i == a - 1 or j == 0 or j == a - 1:
+            line += '#'
+        else:
+            line += ' '
+        j += 1
+    print(line)
+    i += 1
