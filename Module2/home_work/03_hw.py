@@ -28,4 +28,8 @@
 # 19 189.81 Rub.
 # 20 199.80 Rub.
 
-# TODO: your code here
+x = float(input('x = '))
+i = 1
+while i <= 20:
+    print(i, x * i, 'Rub.')
+    i += 1
