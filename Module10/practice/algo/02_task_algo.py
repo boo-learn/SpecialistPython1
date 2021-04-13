@@ -7,3 +7,22 @@
 
 # Дополнительно: сделайте так, чтобы можно было гарантированно угадать число за 7 попыток.
 
+import copy
+win = False
+n_max = 100
+n_min = 0
+n_x = 50
+print('1 - equally, 2 - larger, 3 - less')
+answer = int(input(f'число больше {n_x}?'))
+while win is False:
+    if answer == 1:
+        print('win')
+        win = True
+    elif answer == 2:
+        n_min = copy.copy(n_x)
+        n_x = abs(-(n_max + n_x) // 2)
+        answer = int(input(f'число больше {n_x}?'))
+    else:   # answer == 3
+        n_max = copy.copy(n_x)
+        n_x = (n_min + n_x) // 2
+        answer = int(input(f'число меньше {n_x}?'))
