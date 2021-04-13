@@ -6,3 +6,19 @@
 
 # TODO: your code here
 
+text = "И темен город. Мороз узором дорог не мети."
+
+text = text.replace(' ', '')
+text = text.replace('!', '')
+text = text.replace('.', '')
+text = text.replace(',', '')
+text = text.replace('?', '')
+
+
+if text.lower() == text[::-1].lower():
+    print('перевертыш')
+else:
+    print('не перевертыш')
+
+print(text.lower())
+print(text[::-1].lower())
