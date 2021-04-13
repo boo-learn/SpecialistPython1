@@ -2,3 +2,10 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+listing = [3, 6, 10, -10, 9, -8, -4]
+sum = 0
+for i in listing:
+    sum += i
+    print(sum)
+
+
