@@ -2,3 +2,9 @@
 # Вывести на экран сумму всех положительных элементов кратных двум.
 
 # TODO: your code here
+numbers = [99, 86, 78, -9, 70, -22, -38]
+total = 0
+for n in numbers:
+    if n > 0 and n % 2 == 0:
+        total += n
+print(total)
