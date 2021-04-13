@@ -35,11 +35,22 @@ items = [
 print("Товары на складе представлены брэндами: ")
 
 # TODO: your code here
+brands = []
+for el in items:
+    if el["brand"] not in brands:
+        brands.append(el["brand"])
+print(brands)
 
 print("На складе больше всего товаров брэнда(ов): ")
-
-# TODO: your code here
+count_brands = [el["brand"] for el in items]
+count=[]
+for el in brands:
+    count.append((count_brands.count(el), el))
+print(max(count))
 
 print("На складе самый дорогой товар брэнда(ов): ")
-
-# TODO: your code here
+item=items[0]
+for el in items:
+    if el["price"]>item["price"]:
+        item=el
+print(item)
