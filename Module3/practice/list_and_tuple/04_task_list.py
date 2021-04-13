@@ -2,3 +2,11 @@
 # Вывести на экран сумму всех положительных элементов.
 
 # TODO: your code here
+
+lst = [2, -2, -5, 5, 9, 4, -8, -9, 8]
+sum_lst = []
+for el in lst:
+    if el >= 0:
+        sum_lst.append(el)
+
+print(sum(sum_lst))
