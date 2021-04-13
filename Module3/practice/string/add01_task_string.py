@@ -8,3 +8,13 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat
 # Примечание: обратите внимание на перенос длинной строки на новую строку
 
 # TODO: your code here
+for symb in [",", ".", "!", "?"]:
+    text = text.replace(symb, "")
+words = text.split(" ")
+
+cnt  = 0
+for word in words:
+    if len(word) > 7:
+        cnt += 1
+
+print(cnt)
