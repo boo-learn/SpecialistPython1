@@ -20,3 +20,12 @@
 # Слово: | s | a | n | d | w | i | c | h |
 #
 # Шифр:  | s | h | a | c | n | i | d | w |
+for i in range(len(word_cypher)):
+    if i % 2 == 0:
+        word_no_cypher += word_cypher[i]
+
+for i in range(len(word_cypher), 0, -1):
+    if i % 2 != 0:
+        word_no_cypher += word_cypher[i]
+
+print(word_no_cypher)
