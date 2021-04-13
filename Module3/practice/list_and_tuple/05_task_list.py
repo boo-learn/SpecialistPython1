@@ -15,3 +15,16 @@ fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # Важно! Ваше решение должно работать с любыми корректными "исходными данными"
 # Проверьте это, добавив или удалив несколько элементов списка
+
+max_len = 0
+i = 1
+msg =''
+for fruit in fruits:
+    if len(fruit) > max_len:
+        max_len = len(fruit)
+
+for fruit in fruits:
+    msg += str(i) + ' ' * (len(fruit) - max_len + 1) + fruit + "\n"
+    i += 1
+
+print(msg)
