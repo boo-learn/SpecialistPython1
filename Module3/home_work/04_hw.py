@@ -5,3 +5,10 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+numbers = [2, -5, 8, 9, -25, 25, 4]
+roots = []
+for n in [x for x in numbers if x >= 0]:
+    root = n ** 0.5
+    if root == int(root):
+        roots.append(int(root))
+print(roots)
