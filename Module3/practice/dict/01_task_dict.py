@@ -8,3 +8,9 @@ item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub", "cou
 dollar_rate = 74.12
 
 # TODO: your code here
+
+item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub", "count": "10"}
+dollar_rate = 74.12
+
+summa =float(item["price"]) * float(dollar_rate)
+print(summa)
