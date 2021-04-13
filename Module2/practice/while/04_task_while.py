@@ -7,3 +7,9 @@
 # Формат выходных данных: Необходимо вывести сумму чисел написанных на кирпичах.
 
 # TODO: your code here
+levels = int(input("levels: "))
+i, res = 1, 0
+while i <= levels:
+    res += i*i
+    i += 1
+print("sum = ", res)
