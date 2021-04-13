@@ -5,3 +5,33 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+import random
+
+n = int(input("Введите число n: "))
+
+numbers = []
+
+for i in range(n):
+    numbers.append(random.randint(-100, 100))
+
+# Можно расскоментить numbers, для проверки.
+# Выведет: [ 2, 3, 5 ]
+
+#numbers = [ 4, 7, 9, 25 ]
+
+print(numbers)
+
+roots = []
+
+for num in numbers:
+    root = num ** 0.5
+
+    # Костыль: root.real - это конвертация значения типа complex (иногда получается при извлечения корня)
+    # в тип, пригодный для конвертации в int
+    int_root = int(root.real)
+
+    if root == int_root:
+        roots.append(int_root)
+
+print(roots)
