@@ -4,3 +4,5 @@
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
 # TODO: your code here
+sorted_names = sorted(names, key=len)
+print(sorted_names[-1])
