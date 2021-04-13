@@ -12,4 +12,4 @@ tup8 = tuple(2, 7, 8, -5)
 tup9 = tuple()
 tup10 = tuple("hello")
 tup11 = ()
-tup12 = 2 and 4
+#tup12 = 2 and 4
