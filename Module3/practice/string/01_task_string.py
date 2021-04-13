@@ -3,8 +3,9 @@
 # и заменять первые буквы буквами в верхнем регистре.
 # Измененные данные(имя и фамилию) вывести на экран.
 
-name = input("Имя: ")
-surname = input("Фамилия: ")
+name = input("Имя: ").capitalize()
+surname = input("Фамилия: ").capitalize()
 
 
 print(name, surname)
+
