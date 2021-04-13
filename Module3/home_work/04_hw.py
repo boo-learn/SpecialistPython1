@@ -5,3 +5,13 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+
+numbers = [2, -5, 8, 9, -25, 25, 4]
+sqrt = []
+for num in numbers:
+    res = num ** 0.5
+    if num > 0 and res%1 == 0:
+        sqrt.append(int(res))
+
+print(sqrt)
