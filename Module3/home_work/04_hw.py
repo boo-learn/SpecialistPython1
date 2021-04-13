@@ -5,3 +5,11 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+my_list = [2, -5, 8, 9, -25, 25, 4]
+new_list = []
+
+for el in my_list:
+    if el > 0 and str(el ** 0.5)[-1] == '0':
+        new_list.append(int(el ** 0.5))
+
+print(new_list)
