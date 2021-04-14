@@ -4,5 +4,6 @@
 def deposit(x, a, n):
     for _ in range(num_year):
          start_sum = start_sum + start_sum * (percent / 100)
+    return start_sum
 # функция принимает три числа и возвращает одно - итоговая сумма на счету Ивана.
 # Проценты на вклад начисляются один раз в год.
