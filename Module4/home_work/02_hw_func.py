@@ -5,9 +5,16 @@
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
 def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2)**0.5
+A = [0,0]
+B = [0,1]
+C = [10,1]
 
+def minimal_side(**kwargs):
+    m_side = min(kwargs.values())
+    for key, value in kwargs.items():
+        if value == m_side:
+            return key
 
-# TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+m_side = minimal_side(AB=distance(*A, *B), BC = distance (*B,*C), AC = distance (*C,*A))
+print (f'наименьшая сторона: {m_side}')
