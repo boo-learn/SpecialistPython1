@@ -5,3 +5,5 @@
 
 def palindrome(number):
     pass
+def palindrome(number):
+    return str(number) == str(number)[::-1]
