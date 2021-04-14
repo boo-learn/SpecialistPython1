@@ -5,6 +5,10 @@
 # Если все же делится, то надо исключить столетия: они все нацело делятся на 100, но те,
 # которые не делятся нацело на 400, високосными не являются.
 
-def days_in_year(num_year):
-    pass
+def days_in_year(year):
+    if year % 100 == 0:
+        is_leap = year // 100 % 4 == 0
+    else:
+        is_leap = year % 4 == 0
+    return 366 if is_leap else 365
 
