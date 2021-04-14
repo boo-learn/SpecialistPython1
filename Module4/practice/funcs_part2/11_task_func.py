@@ -21,3 +21,5 @@ def gen_list(size, at=-10, to=10):
 
 my_list = gen_list(10)
 my_tuple = 5, 7, -4, 10, 8
+print(average(*my_list))
+print(average(*my_tuple))
