@@ -2,6 +2,10 @@
 # произвольными целыми числами в заданном диапазоне.
 # , где size - размер генерируемого списка c элементами в диапазоне от of до to.
 
+from random import randint
+
 def gen_list(size, of, to):
-    pass
+    l = []
+    for _ in range(size): l.append(randint(of, to))
+    return l
 
