@@ -4,3 +4,22 @@
 # Алгоритм проверки на високосный год оформите в виде отдельной функции.
 #
 # Входная строка содержит два целых числа – номер месяца (возможно, неправильный) и номер года.
+days_in_month = (31, 28, 3, 30, 31, 30, 31, 31, 30, 31, 30, 31)
+while True:
+    month = int(input())
+    try:
+        month = float(input('введите месяц'))
+        year = float(input('введите год'))
+        if float(month) % 1 != 0 or float(year) % 1 != 0:
+            raise ValueError
+        month = int(month)
+        year = int(year)
+        if month < 1 or month > 12 or :
+            raise ValueError
+        break
+    except ValueError:
+        print('некорректные данные')
+
+
+days = days_in_month[month - 1]
+# далее коррекция февраля для високосного года
