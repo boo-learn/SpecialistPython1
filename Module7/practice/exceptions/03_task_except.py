@@ -14,7 +14,7 @@ def run():
 def get_numbers():
     try:
         input_str = input('Введите несколько чисел, разделяя пробелом (пример: 1 2 3 4 -7 8 5): ')
-        return [int(num_str) for num_str in input_str.split(' ')]
+        return [int(num_str) for num_str in input_str.split(' ') if len(num_str) > 0]
     except Exception as error:
         print(f'Ошибка во время разбора входных данных: {error}')
         return get_numbers()
