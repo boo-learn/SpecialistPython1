@@ -30,3 +30,5 @@ for line in f:
         total += 1
 
 print(f'Кол-во стихотворений {total}')
+
+f.close()
