@@ -4,3 +4,13 @@
 # 1. На какую сумму было продано товаров
 # 2. Цену самого дорогого товара
 # 3. Цену самого дешевого товара
+f = open('solid.txt', 'r', encoding='utf-8')
+solid = []
+for line in f:
+    bufer = line.strip().split(' ')
+    for buf in bufer:
+        solid.append(float(buf))
+f.close()
+print('Продоно товаров на сумму:', sum(solid))
+print('Цена самого дорогого товара:', max(solid))
+print('Цена самого дешевого товара:', min(solid))
