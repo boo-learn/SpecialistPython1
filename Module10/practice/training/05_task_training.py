@@ -25,3 +25,41 @@
 # 2
 # Выходные данные-2:
 # 0
+print("Стоимость подъема")
+
+while True:
+    try:
+        floors = int(input("Этажей в доме: "))
+        if not 2 <= floors <= 100:
+            raise ValueError
+        break
+    except ValueError:
+        print("Неверное кол-во")
+
+while True:
+    try:
+        floor = int(input("Этаж подъема: "))
+        if not 2 <= floor <= floors:
+            raise ValueError
+        break
+    except ValueError:
+        print("Неверное кол-во")
+
+while True:
+    try:
+        step = int(input("через сколько этажей останавливается лифт: "))
+        if not 2 <= step < floors:
+            raise ValueError
+        break
+    except ValueError:
+        print("Неверное кол-во")
+
+if (floor - 1) % step == 0:
+    print("Стоимость = 0")
+else:
+    cost1 = ((floor - 1) % step) * 200
+    if floor + step > floors:
+        print("Стоимость = ", cost1)
+    else:
+        cost2 = (step - (floor - 1) % step) * 100
+        print("Стоимость = ", min(cost1, cost2))
