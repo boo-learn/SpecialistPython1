@@ -5,3 +5,13 @@
 # Формат выходных данных:
 # Выведите исходный список в порядке убывания баллов. Если у некоторых участников одинаковые баллы,
 # то их между собой нужно упорядочить в порядке возрастания идентификационного номера
+olympiad_participants = [(1, 10),
+                         (3, 9),
+                         (2, 9),
+                         (4, 8),
+                         (5, 12),
+                         ]
+
+list_sorted = sorted(sorted(olympiad_participants, key=lambda val: val[0]), key=lambda val: val[1], reverse=True)
+
+print(list_sorted)
