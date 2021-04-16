@@ -25,3 +25,19 @@
 # 2
 # Выходные данные-2:
 # 0
+H = 20 
+n = 7
+k = 2
+
+
+def lifting_cost(height_house, floor, floor_lift):
+    if (n - 1) % k == 0:  # True - л
+        return 0
+    stop_lift_up = (n - 1) % k
+    stop_lift_down = k - stop_lift_up
+    if stop_lift_up * 100 < stop_lift_down * 200:
+        return stop_lift_up * 100
+    return stop_lift_down * 200
+
+
+print(lifting_cost(H, n, k))
