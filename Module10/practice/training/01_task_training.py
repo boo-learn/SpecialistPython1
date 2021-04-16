@@ -5,3 +5,10 @@
 # Пользователь должен понимать, что его просят ввести и что именно делает программа.
 
 
+a=float(input('side a:'))
+b=float(input('side b:'))
+c=float(input('side c:'))
+if a>0 and b>0 and c>0:
+    print (f' площадь граней:{4*a*b}, объем: {a*b*c}')
+else:
+    print('Некорректные данные')
