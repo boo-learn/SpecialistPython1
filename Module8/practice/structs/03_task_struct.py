@@ -4,3 +4,15 @@
 # 1. Количество элементов списка не превышающие 10
 # 2. Сумму всех положительных элементов списка
 # 3. Среднее арифметическое всех четных элементов
+import random
+
+src_list = [random.randint(0, 10) for x in range(5)]
+print(src_list)
+
+def avg(*args):
+    if len(args)  == 0: return None
+    return sum(*args) / len(args)
+
+print("Количество элементов списка не превышающие 10: ", len([x for x in src_list if x <= 10]))
+print("Сумму всех положительных элементов списка: ", sum([x for x in src_list if x > 0]))
+print("Среднее арифметическое всех четных элементов: ", avg([x for x in src_list if x % 2 == 0]))
