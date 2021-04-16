@@ -5,3 +5,19 @@
 # Пользователь должен понимать, что его просят ввести и что именно делает программа.
 
 
+def area_side(a, b, c):
+    return 2 * (a * b + b * c + c * a)
+
+
+def volume(a, b, c):
+    return a * b * c
+
+
+while True:
+    try:
+        size = [int(i) for i in input('Введите размер парралепида в формате axbxc: ').split('x')]
+        break
+    except (ValueError, TypeError):
+        print('Необходимо ввести число')
+
+print('Площадь = ', area_side(*size), '\nОбъем = ', volume(*size))
