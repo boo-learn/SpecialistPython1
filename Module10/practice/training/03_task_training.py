@@ -2,3 +2,15 @@
 # Формат входных данных: Вводится целое положительное число — количество прошедших дней.
 # Формат выходных данных: Выведите целое число недель.
 
+days = int(input("Введите число прошедших дней: "))
+week = int(days/7)
+last_days = days if days < 7 else days%7
+print(week, "week", last_days,"days")
+
+# Еще вариант
+
+import math
+
+weeks = math.floor(days / 7)
+
+print(weeks, days % 7)
