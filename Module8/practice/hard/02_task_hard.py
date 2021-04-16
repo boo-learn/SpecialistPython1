@@ -17,3 +17,13 @@
 
 # Дано целое число - номер комнаты
 # Вывести два целых числа — номер этажа и ее порядковый номер слева на этаже.
+
+def find_flat(flat):
+    block, max_floor, max_flat = 0, 0, 0
+    while max_flat < flat:
+        block += 1
+        max_floor += block
+        max_flat += block**2
+    floor = max_floor - (max_flat - flat) // block
+    pos = flat - (max_flat - (max_floor - floor) * block - block + 1) + 1
+    return floor, pos
