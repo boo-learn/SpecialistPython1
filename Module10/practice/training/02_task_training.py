@@ -6,3 +6,16 @@
 # Формат выходных данных:
 # Выведите, во сколько раз отрезок AB больше, чем отрезок CD. Ответ введите с точностью до 6-ти знаков после запятой.
 
+print("Сравнение отрезков")
+
+points = [0, 0, 0, 0]
+names = ['A', 'B', 'C', 'D']
+for i in range(4):
+    while True:
+        try:
+            points[i] = float(input(f"Точка {names[i]}: "))
+            break
+        except ValueError:
+            print("Неверное значение")
+
+print("Соотношение длин AB/CD: ", round( abs(points[1] - points[0]) / abs(points[3] - points[2]) , 6))
