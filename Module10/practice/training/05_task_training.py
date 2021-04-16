@@ -25,3 +25,16 @@
 # 2
 # Выходные данные-2:
 # 0
+h=20
+f=7
+k=2
+
+x=1
+raz=f//(k+1)
+snizu = 200*(f-(raz*k+1))
+sverhu = 100*((1+k*(raz+1))-f)
+
+if sverhu<snizu and (1+k*(raz+1))<h:
+    print (sverhu)
+else:
+    print(snizu)
