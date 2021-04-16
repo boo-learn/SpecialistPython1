@@ -31,15 +31,43 @@ items = [
         "price": 1700
     },
 ]
+
 # Найдите:
+
+brands = {}
+
+for item in items:
+    brand = item["brand"]
+    amount = brands.get(brand, 0)
+    amount += 1
+    brands[brand] = amount
+
 print("Товары на складе представлены брэндами: ")
 
-# TODO: your code here
+print(list(brands.keys()))
 
 print("На складе больше всего товаров брэнда(ов): ")
 
-# TODO: your code here
+max_amount = 0
+most_presented_brand = ""
+
+for brand, amount in brands.items():
+    if amount > max_amount:
+        max_amount = amount
+        most_presented_brand = brand
+
+print(most_presented_brand)
 
 print("На складе самый дорогой товар брэнда(ов): ")
 
-# TODO: your code here
+max_price = 0
+most_expensive_brand = ""
+
+for item in items:
+    price = item["price"]
+    if price > max_price:
+        max_price = price
+        brand = item["brand"]
+        most_expensive_brand = brand
+
+print(most_expensive_brand)
