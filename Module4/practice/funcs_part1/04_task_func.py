@@ -10,3 +10,13 @@ def can_triangle(p1, p2, p3):
 can_triangle((10, 12), (14, 18), (12, 12))
 
 # Не забудьте протестировать вашу функцию
+def can_triangle(p1, p2, p3):
+    # TODO: your code here
+    if p1 != p2 and p2 != p3 and p3 != p1:
+        return print("Могут")
+    return print("Не могут")
+
+
+# Пример вызова функции
+can_triangle((10, 12), (14, 18), (12, 12))
+can_triangle((10, 12), (10, 12), (12, 12))
