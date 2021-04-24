@@ -4,4 +4,11 @@
 # а если делится на 3 и на 5 - вывести “Foobar”.
 # Для всех остальных случаев не выводить ничего.
 
-# TODO: your code here
+number = int(input())
+
+if number % 3 == 0 and number % 5 == 0:
+    print("Foobar")
+elif number % 3 == 0 and not(number % 5 == 0):
+    print("Foo")
+elif not(number % 3 == 0) and number % 5 == 0:
+    print("Bar")
