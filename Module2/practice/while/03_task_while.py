@@ -10,3 +10,10 @@
 # 1234
 
 # TODO: your code here
+n = int(input("Введите число: "));
+i=1;
+string="1";
+while i<=n:
+    print(string);
+    i+=1;
+    string=string+str(i);
