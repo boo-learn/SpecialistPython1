@@ -4,4 +4,10 @@
 # а если делится на 3 и на 5 - вывести “Foobar”.
 # Для всех остальных случаев не выводить ничего.
 
-# TODO: your code here
+a = int(input('Input here: '))
+if a % 3 == 0:
+	print('Foo')
+if a % 5 == 0:
+	print('Bar')
+if a % 5 == 0 and a % 3 == 0:
+	print('Foobar')
