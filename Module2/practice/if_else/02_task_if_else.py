@@ -3,3 +3,9 @@
 # Формат выходных данных: Если число оканчивается цифрой 5, вывести «YES», в противном случае — вывести «NO».
 
 # TODO: your code here
+number = int(input())  
+a = number%10
+if a==5:
+    print("yes")
+else:
+    print("no")
