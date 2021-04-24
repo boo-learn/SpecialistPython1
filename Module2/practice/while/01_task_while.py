@@ -3,3 +3,10 @@
 # Формат выходных данных: Выведите все числа, требуемые по условию задачи.
 
 # TODO: your code here
+a = int(input("put 1: "))
+b = int(input("put 2: "))
+c = a
+while c<=b: 
+    if c%2==0:
+        print(c)
+    c+=1
