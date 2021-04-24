@@ -3,4 +3,13 @@
 # Формат входных данных: дано целое число m (1 ≤ m ≤ 12).
 # Формат выходных данных: требуется вывести название времени года
 
-# TODO: your code here
+number = int(input())
+
+if 3 <= number <= 5:
+    print("Spring")
+elif 6 <= number <= 8:
+    print("Summer")
+elif 9 <= number <= 11:
+    print("Autumn")
+else:
+    print("Winter")
