@@ -3,3 +3,6 @@
 # то программа запрашивает ввод снова.
 
 # TODO: your code here
+str="";
+while str!="хватит":
+    str=input();
