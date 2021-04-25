@@ -14,3 +14,17 @@
 #    #
 #    #
 ######
+a = int(input("Введите номер сторону квадрата: "))
+i=j=0
+string=""
+while i<a:
+    while j<a:
+        if i==0 or i==(a-1) or j==0 or j==(a-1):
+            string+="#"
+        else:
+            string+=" "
+        j+=1
+    print(string)
+    i+=1
+    string=""
+    j=0
