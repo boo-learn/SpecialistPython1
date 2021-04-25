@@ -17,3 +17,19 @@
 # 284 220
 
 # TODO: your code here
+N = int(input("Введите число от 1 до 10000:"))
+i=0
+while i<=N:
+   i+=1
+   k=n=0
+   x=j=1
+   while x<i:
+       if i%x==0:
+           k+=x
+       x+=1
+   while j<k:
+        if k%j==0:
+           n+=j
+        j+=1
+   if i==n and i<k:
+       print(i,k)
