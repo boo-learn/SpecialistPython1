@@ -8,3 +8,12 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+n = int(input("Введите кол-во коров:"))
+if n>=11 and n<=20:
+    print(n, "коров")
+elif n%10==1:
+    print(n, "корова")
+elif n%10>=1 and n%10<=4:
+    print(n, "коровы")
+else:
+    print(n, "коров")
