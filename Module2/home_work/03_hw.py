@@ -29,3 +29,8 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+x =float(input("Введите x :"))
+i=1
+while i <= 20:
+    print(i, i*x, "Rub.")
+    i+=1
