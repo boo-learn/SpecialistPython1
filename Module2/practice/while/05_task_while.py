@@ -16,5 +16,16 @@
  #
 # #
 
+a = int(input())
 
-# TODO: your code here
+i = 1
+while i <= a:
+    j = 1
+    while j <= a:
+        if i == j or i == a - j + 1:
+            print("#", end='')
+        else:
+            print(" ", end='')
+        j += 1
+    print()
+    i += 1
