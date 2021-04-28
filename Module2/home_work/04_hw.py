@@ -14,3 +14,17 @@
 #    #
 #    #
 ######
+
+a = int(input())
+
+i = 1
+while i <= a:
+    j = 1
+    while j <= a:
+        if i == 1 or i == a or j == 1 or j == a:
+            print("#", end='')
+        else:
+            print(" ", end='')
+        j += 1
+    print()
+    i += 1
