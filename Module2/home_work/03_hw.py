@@ -29,3 +29,9 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+х = float(input())
+a = 1
+b = 20
+while a<=b:
+    print(a,a*х,"Rub")
+    a = a+1
