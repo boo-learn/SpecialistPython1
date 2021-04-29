@@ -14,3 +14,10 @@
 #    #
 #    #
 ######
+
+a = int(input("Размер стороны квадрата: "))
+s = "#"
+print(s*a)
+for i in range(a - 2):
+    print(s,' ' * (a-4), s)
+print(s*a)
