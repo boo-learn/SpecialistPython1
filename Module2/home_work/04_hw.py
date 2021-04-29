@@ -14,3 +14,12 @@
 #    #
 #    #
 ######
+
+a = int(input())
+i = 1
+while i<=a:
+    if i == 1 or i == a:
+        print(a*'#')
+    else:
+        print("#"+(a-2)*" "+"#")
+    i+=1
