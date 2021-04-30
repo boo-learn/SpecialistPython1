@@ -18,3 +18,24 @@
 
 
 # TODO: your code here
+
+a = int(input("сторона квадрата = "))
+if a <= 2 or a > 30:
+    print("error")
+
+tail = a % 2
+half = a // 2    
+s = ""
+i = -1
+while i < a:
+    i = i + 1
+    if i < half:
+        s = (" ")*i + "#" + ( a - 2 - 2*i )*(" ") + ("#")
+    elif i > half:
+        if i - 1 == half and tail != 0:
+            s = (" ")*( i - 1 ) + "#"
+        else:
+            s = (" ")*( a - i ) + "#" + ( 2*i - a - 2 )*(" ") + ("#")
+    else:
+        continue
+    print( s )
