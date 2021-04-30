@@ -10,3 +10,14 @@
 # 1234
 
 # TODO: your code here
+
+n = int(input("n = "))
+if n < 1:
+    print("error")
+    
+i = 1
+s = ""
+while i <= n:
+    s = s + str(i)
+    print( s )    
+    i += 1
