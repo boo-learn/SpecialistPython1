@@ -17,3 +17,25 @@
 # 284 220
 
 # TODO: your code here
+
+n = int(input("n = "))
+if n < 1 or n > 10000:
+    print("error")
+
+i = 3
+while i <= n:
+    frendly_1 = 0
+    k = 1
+    while k < i:
+        if i % k == 0:
+            frendly_1 += k
+        k += 1
+    frendly_2 = 0
+    k = 1
+    while k < frendly_1:
+        if frendly_1 % k == 0:
+            frendly_2 += k
+        k += 1
+    if frendly_1 != frendly_2 == i:
+        print("Пара дружественных неравных чисел: ",frendly_2, frendly_1)
+    i += 1
