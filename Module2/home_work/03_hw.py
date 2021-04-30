@@ -29,3 +29,8 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+price = float(input("Введите стоимость единицы товара: "))
+c = 1
+while c <= 20:
+    print(c, "%.2f" % (price*c), "Rub")
+    c += 1
