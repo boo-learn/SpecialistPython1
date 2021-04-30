@@ -14,3 +14,13 @@
 #    #
 #    #
 ######
+a = int(input("Input the lengh of the square's side: "))
+i=0
+print ("#"*a)
+if a!=3:
+    while i<(a-2):
+        print("#"," "*(a-4),"#")
+        i+=1
+else:
+    print("#","#")
+print ("#"*a)
