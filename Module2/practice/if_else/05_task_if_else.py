@@ -4,3 +4,14 @@
 # Формат выходных данных: требуется вывести название времени года
 
 # TODO: your code here
+
+m = int(input("введите число "))
+
+if m > 2 and m < 6:
+    print("Весна")
+elif m > 5 and m < 9:
+    print("Лето")
+elif m > 8 and m < 12:
+    print("Осень")
+else:
+    print("Зима")
