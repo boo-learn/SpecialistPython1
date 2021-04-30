@@ -5,3 +5,21 @@
 # Для всех остальных случаев не выводить ничего.
 
 # TODO: your code here
+
+n = int(input("введите число "))
+
+if n % 3 == 0 and n % 5 == 0:
+    print("Foobar")
+elif n % 3 == 0:
+    print("Foo")
+elif n % 5 == 0:
+    print("Bar")
+
+#word = ""
+#n = int(input("введите число "))
+#if n % 3 == 0:
+#    word = "Foo"
+#if n % 5 == 0:
+#    word = word + "bar"
+#if word != "":
+#    print(word)
