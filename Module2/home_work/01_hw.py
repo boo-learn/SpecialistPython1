@@ -5,4 +5,11 @@
 # Формат выходных данных
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
-# TODO: your code here
+print ("Input the demensions of the chocolate")
+n = int(input("How many slices horizontally: "))
+m = int(input("How many slices vertically: "))
+k = int(input("How many slices do you want to break off: "))
+if k%n==0 or k%m==0:
+    print("YES")
+else:
+    print("NO")
