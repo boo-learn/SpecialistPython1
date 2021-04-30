@@ -3,3 +3,17 @@
 # Формат выходных данных: Выведите все числа, требуемые по условию задачи.
 
 # TODO: your code here
+
+a = int(input("a = "))
+b = int(input("b = "))
+if not a < b:
+    print("error")
+
+if a % 2 == 0:
+    i = a    
+else:
+    i = a + 1
+
+while i <= b:
+    print(i)
+    i += 2
