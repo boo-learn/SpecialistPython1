@@ -6,3 +6,20 @@
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
 # TODO: your code here
+while True:
+
+    n = int(input("n = "))
+    m = int(input("m = "))
+    k = int(input("k = "))
+    
+    if n < 1 or m < 1 or k < 1 or k >= n*m:
+        print("error")
+    else:    
+    
+        if k % n == 0 or k % m == 0:
+            print ("YES»")
+        else:
+            print("NO")
+            
+    if input(" Закончить: 'пробел' и 'Enter'  |  еще раз: 'Enter'") == " ":
+        break
