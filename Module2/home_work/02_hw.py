@@ -8,3 +8,11 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+
+n = int(input('Введите число:'))  
+if n % 10 == 1 and n%100 != 11:
+	print(str(n) + ' корова')
+elif (n % 10 == 2 and n%100 != 12) or (n % 10 == 3 and n%100 != 13) or (n % 10 == 4 and n%100 != 14):
+	print(str(n) + ' коровы')
+else:
+	print(str(n) + ' коров')
