@@ -29,3 +29,25 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+
+while True:                    # Для повторного запуска программы без выхода
+
+    x = float(input("x = "))
+    
+    if x <= 0 or x > 105:      #Проверка входных данных для себя
+        print("error")
+    else:   
+    
+        i = 1        
+        while i < 21:
+            y = i*x
+            fraction = int( ( y - int( y ) )*100 + 0.5 )
+            if fraction < 10:
+                fraction = "0" + str( fraction )
+            else:
+                fraction = str( fraction )
+            print( i, str( int( y ) ) + "." + fraction, "Rub.")
+            i += 1
+                  
+    if input(" Закончить: 'пробел' и 'Enter'  |  еще раз: 'Enter'") == " ":  # Для повторного запуска программы без выхода
+        break
