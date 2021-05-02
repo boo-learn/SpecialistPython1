@@ -2,3 +2,8 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+l = [-5, 2, 5, 10, 3]
+sum = 0
+for element in l:
+    sum += element
+print('сумма: ', sum)
