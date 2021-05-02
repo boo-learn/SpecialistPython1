@@ -5,7 +5,14 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+max_letters = 0
+i = 1
+for el in fruits:
+    if len(el)>max_letters:
+        max_letters = len(el)
+for el in fruits:
+    print ("{0}. {1}".format (i, (" "*(max_letters-len(el))+el)))
+    i+=1
 
 # Пример вывода:
 # 1. яблоко
