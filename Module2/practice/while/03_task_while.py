@@ -12,8 +12,6 @@
 # TODO: your code here
 
 n = int(input("Введите n:"))
-if n < 1:
-    print("ошибка")
 i =1
 x = ""
 while i<=n:
