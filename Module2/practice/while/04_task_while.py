@@ -8,8 +8,6 @@
 
 # TODO: your code here
 l = int(input("Количество уровней в пирамиде = "))
-if l < 1:
-    print("Oшибка")
 i = 1
 s = 0
 while i <= l:
