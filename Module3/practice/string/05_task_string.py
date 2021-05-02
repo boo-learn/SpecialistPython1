@@ -6,3 +6,9 @@
 
 # TODO: your code here
 
+text="И темен город. Мороз узором дорог не мети."
+text_check=text.replace(' ','').replace('.','').replace('!','').replace('?','').upper()
+if text_check==text_check[::-1]:
+    print('Перевертыш')
+else:
+    print('Не перевертыш')
