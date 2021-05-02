@@ -6,6 +6,13 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
+len_word = 0
+for element in fruits:
+    if len(element) > len_word:
+        len_word = len(element)
+
+for i, element in enumerate(fruits):
+    print(str(i+1) + "." + " "*(len_word-len(element)), element)
 
 # Пример вывода:
 # 1. яблоко
