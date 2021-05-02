@@ -5,7 +5,19 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+max_len = 0
+for fruit in fruits:
+    if len(fruit) > max_len:
+        max_len = len(fruit)
+
+for i, fruit in enumerate(fruits, 1):
+    number_of_spaces = max_len - len(fruit) - len(str(i)) + 1
+    spaces = " "
+    j = 0
+    while j < number_of_spaces:
+        spaces += " "
+        j += 1
+    print(str(i) + "." + spaces + fruit)
 
 # Пример вывода:
 # 1. яблоко
