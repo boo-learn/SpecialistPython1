@@ -4,3 +4,11 @@
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
 # TODO: your code here
+
+fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
+i = 0
+N=i
+while i < len(fruits):
+    N = i + 1
+    print(N,fruits [i])
+    i += 1
