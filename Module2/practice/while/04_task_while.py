@@ -7,3 +7,10 @@
 # Формат выходных данных: Необходимо вывести сумму чисел написанных на кирпичах.
 
 # TODO: your code here
+level = int(input())
+i = 1
+s = 0
+while i<=level:
+    s = s + i**2
+    i+=1
+print(s)
