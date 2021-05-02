@@ -3,7 +3,11 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+string=""
+for name in names:
+    string+=name+", "
+string=string[:-2]
+print(string)
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
