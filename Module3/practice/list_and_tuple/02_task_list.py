@@ -3,4 +3,7 @@
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
-# TODO: your code here
+i = 1
+for elem in fruits:
+    print(i, elem)
+    i += 1
