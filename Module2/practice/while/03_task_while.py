@@ -10,3 +10,13 @@
 # 1234
 
 # TODO: your code here
+n = int(input('n:'))
+i = 1
+s0 = i
+while i <= n:
+    if i == 1:
+        print(i)
+    else:
+        s0 = str(s0) + str(i)
+        print(s0)
+    i += 1
