@@ -8,3 +8,15 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+n = int(input())
+ost=n % 10
+if  10<= n <=20:
+    print (n, "korov")
+elif 2<= ost <=4:
+    print (n, "korovi")
+elif 5<= ost <=9:
+    print (n, "korov")
+elif ost==0:
+    print (n, "korov")
+elif ost==1:
+    print (n, "korova")
