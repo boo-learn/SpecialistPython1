@@ -10,3 +10,11 @@
 # 1234
 
 # TODO: your code here
+
+n = int(input("Введите n:"))
+i =1
+x = ""
+while i<=n:
+    x = x + str(i)
+    print(x)
+    i =i+1
