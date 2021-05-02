@@ -5,3 +5,11 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+lst = [2, -5, 8, 9, -25, 25, 4]
+lst_new = []
+for num in lst:
+    if num > 0:
+        num_new = num**0.5
+        if num_new - int(num_new) == 0:
+            lst_new.append(int(num_new))
+print(lst_new)
