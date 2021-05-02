@@ -4,5 +4,10 @@
 
 # Пример строки перевертыша: "И темен город. Мороз узором дорог не мети."
 
-# TODO: your code here
+str = input()
 
+new_str = str.replace(" ", "").replace(".", "").replace(",", "").lower()
+if new_str == new_str[::-1]:
+    print("да")
+else:
+    print("нет")
