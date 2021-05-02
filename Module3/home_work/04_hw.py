@@ -5,3 +5,9 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+source_array=[2, -5, 8, 9, -25, 25, 4]
+final_array=[]
+for el in source_array:
+    if el>0 and (int(el)**(1/2)).is_integer():
+        final_array.append(int(el**(1/2)))
+print(final_array)
