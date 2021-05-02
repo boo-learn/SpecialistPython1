@@ -7,3 +7,10 @@ names = ["Иван", "Ирина", "Вячеслав", "Василий", "Пет
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
+stroka = ''
+for i in names:
+    if i == names[len(names) - 1]:
+        stroka += i
+    else:
+        stroka += i + ', '
+print(stroka)
