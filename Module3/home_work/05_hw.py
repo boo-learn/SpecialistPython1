@@ -3,4 +3,10 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+max_len = 0
+
+for i, name in enumerate(names):
+    if len(name) > max_len:
+        max_len = len(name)
+        idx = i
+print(names[idx])
