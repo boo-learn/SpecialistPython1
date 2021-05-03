@@ -21,4 +21,4 @@ for i in range(a, b):
     if palindrome(i):
         palindrome_range.append(i)
 
-print(palindrome_range)
+print(len(palindrome_range))
