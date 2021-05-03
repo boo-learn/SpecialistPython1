@@ -3,6 +3,11 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
+res_str = ""
+for name in names:
+    res_str += name + ", "
+print(res_str[:-2])
+
 # TODO: your code here
 
 # Пример вывода:
