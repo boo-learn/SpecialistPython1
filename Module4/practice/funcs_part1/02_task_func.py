@@ -4,6 +4,12 @@
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
 def palindrome(number):
+    new_number=0
+    n=number
+    while n:
+        new_number=new_number*10+n%10
+        n//=10
+    return new_number==number
     pass
 
 
