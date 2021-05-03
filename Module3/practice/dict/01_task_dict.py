@@ -7,4 +7,7 @@
 item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub", "count": "10"}
 dollar_rate = 74.12
 
+total_value = round((float(item["price"]) / dollar_rate) * int(item["count"], 2))
+print(f"Стоимость всех товаров: ${total_value}")
+
 # TODO: your code here
