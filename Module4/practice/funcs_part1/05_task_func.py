@@ -4,7 +4,7 @@
 # Подсказка: для нахождения площади используйте Теорему Герона
 
 def correctness(x1, y1, x2, y2, x3, y3):
-    if x1 == x2 == x3 or y1 == y2 == y3:
+    if distance(x1, y1, x2, y2) + distance(x1, y1, x3, y3) == distance(x2, y2, x3, y3) or distance(x1, y1, x2, y2) + distance(x2, y2, x3, y3) == distance(x1, y1, x3, y3) or distance(x1, y1, x3, y3) + distance(x2, y2, x3, y3) == distance(x1, y1, x2, y2):
         return False
     return True
 
