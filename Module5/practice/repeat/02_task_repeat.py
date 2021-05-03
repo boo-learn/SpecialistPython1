@@ -3,5 +3,14 @@
 # палиндром - число одинаково читающееся слева направо, так и справа налево.
 #  Пример палиндрома: 12321
 
+#  Пример палиндрома: 12321
+
 def palindrome(number):
-    pass
+    s_num = str(number)
+    if s_num == s_num[::-1]:
+        return True
+    return False
+if palindrome(123454321):
+    print('Число палиндром')
+else:
+    print("Число не палиндром")
