@@ -4,7 +4,17 @@
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
 def palindrome(number):
-    pass
+    number_for_task=number
+    revers_number = 0
+    while number_for_task > 0:
+        n_number = number_for_task%10
+        number_for_task = number_for_task//10
+        revers_number =revers_number*10
+        revers_number += n_number
+    #print (revers_number)
+    if revers_number==number:
+       return "Yes"
+    return "No"
 
 
 # Тестируем функцию
