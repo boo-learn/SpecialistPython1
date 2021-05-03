@@ -4,6 +4,11 @@
 keys = ['name', 'surname', 'age', 'rate']
 values = ['Петр', 'Первый', 42, 1300]
 
-# TODO: your code here
+user_dict=dict.fromkeys(keys)
+i=0
+for key in user_dict:
+    user_dict[key]=values[i]
+    i+=1
+print(user_dict)
 # Нужно получить словарь:
 # {'name': 'Петр', 'surname': 'Первый', 'age': 42, 'rate': 1300}
