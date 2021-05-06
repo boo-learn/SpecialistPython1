@@ -5,9 +5,25 @@
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
 def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
 
 
-# TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+def min_len(dict_sides):
+    min_val = dict_sides['sides'][0]
+    for side in dict_sides['sides']:
+        if side['val'] < min_val['val']:
+            min_val = side
+    return min_val
+
+
+a, b, c = (0, 12), (11, 0), (0, 0)
+sides = {}
+sides.update(
+    {
+        'sides': [{'name': 'AB', 'val': distance(*a, *b)},
+                  {'name': 'AC', 'val': distance(*a, *c)},
+                  {'name': 'BC', 'val': distance(*b, *c)}]
+    }
+)
+
+print(f"Самый короткий отрезок: {min_len(sides)['name']}")
