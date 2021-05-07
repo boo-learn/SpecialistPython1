@@ -20,3 +20,10 @@
 # Слово: | s | a | n | d | w | i | c | h |
 #
 # Шифр:  | s | h | a | c | n | i | d | w |
+text_enc = "shacnidw"
+text_dec = ""
+for i in range(0, len(text_enc), 2):
+    text_dec += text_enc[i]
+for i in range(1, len(text_enc), 2):
+    text_dec += text_enc[len(text_enc)-i]
+print(text_dec)
