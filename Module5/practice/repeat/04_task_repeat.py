@@ -6,5 +6,12 @@
 # веб-странице и вывода списка остальных страниц.
 
 def pagination(num_items, items_on_page):
-    pass
+    p, ost = divmod(num_items, items_on_page)
+    if ost == 0:
+        return p
+    return p + 1
 
+
+tov = 121
+tov_on_p = 10
+print(pagination(tov, tov_on_p))
