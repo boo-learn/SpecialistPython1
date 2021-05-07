@@ -7,3 +7,14 @@
 
 # Дополнительно: сделайте так, чтобы можно было гарантированно угадать число за 7 попыток.
 
+min = 1
+max = 100
+answer = 0
+while answer != 1:
+    print('Твое число равно, меньше или больше чем число', (min+max)//2, '?')
+    answer = int(input())
+    if answer == 2:
+        min=(min+max)//2+1
+    elif answer == 3:
+        max=(min+max)//2-1
+print('Ваше число: ', (min+max)//2)
