@@ -4,5 +4,13 @@
 
 # Пример строки перевертыша: "И темен город. Мороз узором дорог не мети."
 
-# TODO: your code here
+text = 'sator arepo tenet opera rotas'
+text = text.replace(" ", "")
+rev_text = ""
 
+for c in text:
+    rev_text = c + rev_text
+if text == rev_text:
+    print("Строка является перевертышем")
+else:
+    print("Строка не является перевертышем")
