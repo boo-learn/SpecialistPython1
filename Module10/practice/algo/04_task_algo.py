@@ -20,3 +20,21 @@
 # Слово: | s | a | n | d | w | i | c | h |
 #
 # Шифр:  | s | h | a | c | n | i | d | w |
+
+msg_enc = str(input())
+msg_dec = msg_enc
+
+length = len(msg_enc)
+
+real_idx = 0
+i = 0
+while i < length:
+    if i % 2 == 0:
+        idx = real_idx
+        real_idx += 1
+    else:
+        idx = length - real_idx
+    msg_dec = msg_dec[:idx] + msg_enc[i] + msg_dec[idx + 1:]
+    i += 1
+
+print(msg_dec)
