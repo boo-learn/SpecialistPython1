@@ -9,3 +9,24 @@
 # Подсказка:
 # Чтобы получить список больших букв русского алфавита:
 # print(list(map(chr, range(ord('А'), ord('Я')+1))))
+
+f = open("fruits.txt", "r", encoding="utf-8")
+
+d = {}
+for word in f:
+    if word.strip() == "":
+        continue
+
+    if d.get(word[0]) is None:
+        d[word[0]] = []
+    val = d[word[0]]
+    val.append(word.rstrip())
+    d[word[0]] = val
+print(d)
+f.close()
+
+for key, val in d.items():
+    f = open(f"data/fruits_{key}.txt", "w", encoding="utf-8")
+    for fruit in val:
+        f.write(fruit + "\n")
+    f.close()
